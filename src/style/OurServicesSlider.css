@@ -1,0 +1,26 @@
+.serviceslider {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  right: 200px;
+}
+
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+
+}
+
+.left-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  top: -100px;
+}

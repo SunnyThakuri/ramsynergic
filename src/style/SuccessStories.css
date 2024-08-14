@@ -1,0 +1,27 @@
+.successStories {
+  position: absolute;
+  bottom: 20px;
+  /* Adjust this value to position the arrows */
+  z-index: 1;
+  cursor: pointer;
+}
+
+.forward-arrow,
+.backward-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.forward-arrow {
+  right: 100px;
+  border: 1px solid white;
+}
+
+.backward-arrow {
+  right: 0;
+  background-color: white;
+}

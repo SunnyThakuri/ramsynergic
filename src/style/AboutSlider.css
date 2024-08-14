@@ -1,0 +1,47 @@
+.slider__item-01 {
+  background: url("../assets/AboutUI/aboutslider1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__item-02 {
+  background: url("../assets/AboutUI/aboutslider2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slider__item-03 {
+  background: url("../assets/AboutUI/aboutslider3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slick-arrow {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.next-arrow {
+  border: 1px solid white;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.prev-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 0px;
+}

@@ -1,0 +1,45 @@
+.slider01 {
+  background: url("../assets/HomeUI/HeroSlider1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider02 {
+  background: url("../assets/HomeUI/HeroSlider2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slider03 {
+  background: url("../assets/HomeUI/HeroSlider3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slick-arrow {
+  position: absolute;
+  cursor: pointer;
+}
+
+.next-arrow {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.prev-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 0px;
+}
