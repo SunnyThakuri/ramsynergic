@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <>
       <HeroSlider />
+      <GlobalOperation />
       <AboutUs />
       <OurServices />
-      <GlobalOperation />
       <ConsultingService />
       <Discover />
       <Opportunities />
