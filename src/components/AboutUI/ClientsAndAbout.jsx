@@ -1,4 +1,4 @@
-import React from 'react'
+
 import albeaimg from "../../assets/AboutUI/albea.png"
 import cordisimg from "../../assets/AboutUI/cordis.png"
 import auroraimg from "../../assets/AboutUI/aurora.png"

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import discoveuserimg from "../../assets/HomeUI/discoverUserImg.png"
 import visalogo from "../../assets/HomeUI/visaservices.png"
 import screeninglogo from "../../assets/HomeUI/screeningprocess.png"

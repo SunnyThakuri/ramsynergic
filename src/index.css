@@ -3,12 +3,93 @@
 @tailwind utilities;
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 body {
   background-color: #F7F7F7;
+}
+
+.embla {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  --slide-spacing: 1rem;
+  --slide-size: 30%;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .embla {
+    --slide-size: 45%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .embla {
+    --slide-size: 70%;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+  .embla {
+    --slide-size: 90%;
+  }
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  will-change: transform;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+/* .embla__slide img {
+ 
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+ */
+.embla__parallax {
+  border-radius: 1.8rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.embla__parallax__layer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Flags */
+.flag-container {
+  position: absolute;
+  top: 4px;
+  right: 9px;
+}
+
+@media (max-width: 768px) {
+  .flag-container {
+    scale: 75%;
+    right: 4px;
+    top: 2px;
+  }
 }

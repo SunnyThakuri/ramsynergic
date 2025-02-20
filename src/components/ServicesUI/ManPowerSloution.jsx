@@ -18,7 +18,8 @@ const ManPowerSloution = () => {
             <h1 className='text-[#000000] font-semibold text-[22px]'>Manpower Solutions</h1>
           </div>
 
-          <h1 className='text-[#333333] xl:w-[550px] lg:w-[400px] md:w-[320px] mt-[12px] md:ml-[25px] sm:mx-0 mx-[10px]'>We specialize in delivering customized workforce solutions tailored to meet
+          <h1 className='text-[#333333] xl:w-[550px] lg:w-[400px] md:w-[320px] mt-[12px] md:ml-[25px] sm:mx-0 mx-[10px]'>
+            We specialize in delivering customized workforce solutions tailored to meet
             the specific needs of our clients, aiming to streamline operations,
             drive efficiency, and maximize productivity across various facets
             of the organization.</h1>

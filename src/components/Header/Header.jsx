@@ -51,11 +51,11 @@ const Header = () => {
           </div>
         </div>
 
-        <div ref={menuRef} onClick={toggleMenu} className="Navigation lg:relative absolute right-0 lg:w-auto w-[80%] lg:h-auto">
-          <div className="right_side text-[#828282] font-Poppins lg:mt-[33px] lg:space-x-[32px] lg:flex lg:bg-inherit bg-white h-screen lg:h-auto pb-[10px]">
+        <div ref={menuRef} onClick={toggleMenu} className="Navigation  lg:relative absolute right-0 lg:w-auto w-[80%] lg:h-auto">
+          <div className="right_side  text-[#828282] font-Poppins lg:mt-[33px] lg:space-x-[32px] lg:flex lg:bg-inherit bg-white h-screen lg:h-auto pb-[10px]">
 
             <div className="cross_mark cursor-pointer lg:hidden lg:border-none border-b-[1px] border-gray-400 pb-3 lg:pl-0 pl-5 flex justify-end pr-10 pt-5 ">
-              <i class="fa-solid fa-xmark text-[20px] text-black"></i>
+              <i className="fa-solid fa-xmark text-[20px] text-black"></i>
             </div>
 
             <NavLink to='/'>

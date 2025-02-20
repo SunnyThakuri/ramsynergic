@@ -1,4 +1,4 @@
-import React from 'react';
+
 import user from "../../assets/HomeUI/opportunities.png";
 
 const AboutOpportunities = () => {
@@ -20,7 +20,7 @@ const AboutOpportunities = () => {
 
           <div className="btn mt-7  flex  justify-center lg:justify-normal lg:mb-0 mb-20">
             <button className=' border-2 mt-[40px] border-[#F7F7F7] text-[#F7F7F7] px-5 py-3 rounded-[4px] flex'>Apply Now
-              <p className='w-[12px] h-[1px] mx-2'><i class="fa-solid fa-arrow-right"></i></p>
+              <p className='w-[12px] h-[1px] mx-2'><i className="fa-solid fa-arrow-right"></i></p>
             </button>
           </div>
         </div>

@@ -3,7 +3,7 @@ import team1 from "../../assets/AboutUI/MarkBrown.png"
 import team2 from "../../assets/AboutUI/Mezie Basig.png"
 import leftarrow from "../../assets/AboutUI/Frame 110.png"
 import { useState } from "react"
-
+import PropTypes from "prop-types"
 const TeamSlider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,7 +20,7 @@ const TeamSlider = () => {
       </div>
     );
   }
-
+    
   function SamplePrevArrow(props) {
     const { style, onClick } = props
     return (
@@ -33,6 +33,15 @@ const TeamSlider = () => {
       </div>
     );
   }
+  SampleNextArrow.propTypes = {
+    style: PropTypes.object,
+    onClick: PropTypes.func,
+  };
+  
+  SamplePrevArrow.propTypes = {
+    style: PropTypes.object,
+    onClick: PropTypes.func,
+  };
 
   const settings = {
     dots: false,
