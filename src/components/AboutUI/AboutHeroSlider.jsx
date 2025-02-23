@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../style/AboutSlider.css";
 import arrow from "../../assets/HomeUI/arrow.png";
-
 const AboutHeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 

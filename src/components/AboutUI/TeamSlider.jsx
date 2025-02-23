@@ -20,7 +20,7 @@ const TeamSlider = () => {
       </div>
     );
   }
-
+    
   function SamplePrevArrow(props) {
     const { style, onClick } = props
     return (
@@ -33,6 +33,7 @@ const TeamSlider = () => {
       </div>
     );
   }
+
 
   const settings = {
     dots: false,

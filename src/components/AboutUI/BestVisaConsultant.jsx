@@ -1,4 +1,4 @@
-import React from 'react'
+
 import consultantImg from "../../assets/AboutUI/visa_consultant.png"
 import maplogo from "../../assets/AboutUI/mdi_map-marker-path.png"
 import peoplelogo from "../../assets/AboutUI/fluent_people-team-20-filled.png"

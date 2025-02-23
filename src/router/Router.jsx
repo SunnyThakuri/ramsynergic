@@ -13,6 +13,7 @@ import Spain from "../components/Countries/Spain/Spain"
 import Canada from "../components/Countries/Canada/Canada"
 import BlogIndividual from "../components/BlogIndividual/BlogIndividual"
 import ScrollToTop from "./ScrollToTop"
+import Country from "../components/Countries/Country"
 
 const Router = () => {
   return (
@@ -24,6 +25,7 @@ const Router = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/hungary" element={<Hungary />} />
+          <Route path="/country/:name" element={<Country/>}/>
           <Route path="/australia" element={<Australia />} />
           <Route path="/hongkong" element={<Hongkong />} />
           <Route path="/spain" element={<Spain />} />

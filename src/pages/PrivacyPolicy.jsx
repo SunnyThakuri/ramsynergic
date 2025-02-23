@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
           <p className="text-[#484747] mt-[16px]">We may contact you with newsletters, updates, and promotional materials.</p>
 
           <h1 className="text-[#14213A] font-semibold mt-[30px]">Analytics:</h1>
-          <p className="text-[#484747] mt-[16px]">We use individuals' data to improve our website, products, and services.</p>
+          <p className="text-[#484747] mt-[16px]">{"We use individuals' data to improve our website, products, and services."}</p>
         </div>
 
         <div className="CookiesAndTrackingTechnologies">
