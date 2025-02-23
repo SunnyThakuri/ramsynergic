@@ -1,5 +1,4 @@
 
-import React from 'react'
 import TalentAcquisitionImg1 from "../../assets/ServiceUI/TalentAcquisitionImg1.png"
 import TalentAcquisitionImg2 from "../../assets/ServiceUI/TalentAcquisitionImg2.png"
 import zerozerofive from "../../assets/ServiceUI/005.png"

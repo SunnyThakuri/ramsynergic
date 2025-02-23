@@ -22,7 +22,7 @@ const Footer = () => {
               <img
                 className='sm:w-full w-[100px]' src={footerlogo2} alt="" />
             </div>
-            <h1 className='text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center'>Ram Synergic Consulting Services in Hongkong and Masah Allbdha Documents Clearing Services in UAE</h1>
+            <h1 className='text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center'>Global Connect Consulting Services in Hongkong and Masah Allbdha Documents Clearing Services in UAE</h1>
           </div>
 
           <div className="useufl_links hidden sm:block text-white">
@@ -51,7 +51,7 @@ const Footer = () => {
             <h1 className='font-semibold'>COUNTRIES</h1>
             <ul className='list-outside list-disc pl-5 pt-[12px]'>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Hongkong</span>
+                <span className='text-[#CFCFCF]'>Hungary</span>
               </li>
               <li className='text-[#007BFF]'>
                 <span className='text-[#CFCFCF]'>Slovakia </span>
@@ -60,16 +60,16 @@ const Footer = () => {
                 <span className='text-[#CFCFCF]'>Croatia</span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Spain</span>
+                <span className='text-[#CFCFCF]'>Bulgaria</span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Lithuania</span>
+                <span className='text-[#CFCFCF]'>Albania</span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Australia </span>
+                <span className='text-[#CFCFCF]'>Romania </span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Canada</span>
+                <span className='text-[#CFCFCF]'>Norway</span>
               </li>
               <li className='text-[#007BFF]'>
                 <span className='text-[#CFCFCF]'>GCC</span>
@@ -156,7 +156,7 @@ const Footer = () => {
 
         <div className="copyright flex justify-between pb-[40px] pt-[20px] border-t-[1px] border-t-[#FFFFFF] text-[#FFFFFF] mt-[40px]">
           <div className="copyright_text">
-            <h1>© 2023 Ram Synergic | All Rights Reserved.</h1>
+            <h1>© 2023 Global Connect | All Rights Reserved.</h1>
           </div>
 
           <div className="flex space-x-5">
