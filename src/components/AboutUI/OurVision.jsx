@@ -2,23 +2,14 @@
 
 function OurVision() {
   return (
-    <div
-    className="bg-[#00254F] py-8 px-4 lg:px-44"
-    >
-      <div 
-      className=""
-      >
+    <div  className="bg-[#00254F] py-8 md:py-16 px-4 lg:px-44">
+      <div className="">
         <h1 className="text-white text-[24px] lg:text-[32px] font-semibold">
           OUR VISION
         </h1>
 
-        <div
-        className="flex  flex-col gap-8 mt-8"
-        >
-        <div
-        className="flex flex-col md:flex-row md:gap-12  gap-4"
-        >
-          
+        <div className="flex  flex-col gap-8 mt-8">
+        <div className="flex flex-col md:flex-row md:gap-12  gap-4">
           <p className="text-white max-w-1/2 md:text-lg w-full md:w-1/2 text-justify ">
             {`Our vision is to become the employers' preferred recruitment agency
             of choice, distinguished by the quality and extent of our services.
@@ -39,31 +30,21 @@ function OurVision() {
                 src="/aboutUs/vison.jpg" />
             </div>
         </div>
-        <div
-        className=""
-        >
-        <div
-        className="  w-full flex flex-col md:flex-row md:gap-12 gap-4 justify-between"
-        >
-            <div
-            className="max-w-1/2 w-full md:w-1/2 max-h-[330px] hidden md:block lg:max-h-[300px]"
-            >
+        <div className="">
+        <div className="  w-full flex flex-col md:flex-row md:gap-12 gap-4 justify-between">
+            <div className="max-w-1/2 w-full md:w-1/2 max-h-[330px] hidden md:block lg:max-h-[300px]">
                 <img
                 className="w-full h-full rounded-lg  object-cover"
                 src="/aboutUs/vison2.avif" />
             </div>
-          <p
-          className="max-w-1/2 md:text-lg w-full md:w-1/2 text-justify text-white"
-          >
+          <p className="max-w-1/2 md:text-lg w-full md:w-1/2 text-justify text-white">
             {`To become the employers' preferred Recruitment Agency of choice
             based on the extent and quality of our service. We also endeavor to
             provide exceptional recruitment solutions that meet the diverse
             needs of our clients, foster a culture of excellence, and contribute
             to the overall growth and development of the industry.`}
           </p>
-          <div
-            className="max-w-1/2   h-fit md:hidden lg:max-h-[200px]"
-            >
+            <div className="max-w-1/2   h-fit md:hidden lg:max-h-[200px]">
                 <img
                 className="w-full max-h-[330px] rounded-lg  object-cover object-top"
                 src="/aboutUs/vison2.avif" />
