@@ -20,7 +20,7 @@ const Footer = () => {
                 className='sm:w-full w-[100px]' src={footerlogo1} alt="" />
              
             </div>
-            <h1 className='text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center'>Global Connect Consulting Services in Hongkong and Masah Allbdha Documents Clearing Services in UAE</h1>
+            <h1 className='text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center'>Global Connect Consulting Services in Masah Allbdha Documents Clearing Services in UAE</h1>
           </div>
 
           <div className="useufl_links hidden sm:block text-white">
