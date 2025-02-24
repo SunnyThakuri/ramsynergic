@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`sticky top-0 py-3 md:py-0 shadow-lg bg-[#F7F7F7] w-screen z-[20000] 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[80px] px-[20px] flex justify-between`}>
+      <div className={`sticky top-0 py-3 w-full md:py-0 shadow-lg bg-[#F7F7F7] z-[20000] 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[80px] px-[20px] flex justify-between`}>
         <div className="left_side">
           <div onClick={() => handleClick('Home')}>
             <NavLink to='/'>
