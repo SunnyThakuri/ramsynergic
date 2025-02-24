@@ -3,7 +3,7 @@
 function WhyChooseUs() {
   return (
     <div
-    className=" mt-32 flex flex-col lg:flex-row items-center justify-between gap-2"
+    className=" mt-32 md:px-24 px-4 flex flex-col lg:flex-row items-center justify-between gap-2"
     >
       <div
       className="flex flex-col md:items-center "

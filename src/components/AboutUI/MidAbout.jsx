@@ -3,7 +3,7 @@ import immigrationImg from "../../assets/AboutUI/immigration.png";
 function MidAbout() {
   return (
     <div
-    className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col lg:flex-row justify-between"
+    className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col-reverse lg:flex-row justify-between"
     >
       <div
       className="left-side"
@@ -35,9 +35,9 @@ function MidAbout() {
                   </div>
                 </div>
       </div>
-      <div className="right_side md:hidden mt-10 lg:mt-0">
+      <div className="right_side  mt-10 lg:mt-0">
         <img
-          className="w-full lg:w-[465px] h-auto lg:h-[500px]"
+          className="w-full lg:w-[465px] h-[300px] md:h-[500px]"
           src={immigrationImg}
           alt="Immigration"
         />
