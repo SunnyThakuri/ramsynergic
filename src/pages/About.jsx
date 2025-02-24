@@ -15,15 +15,15 @@ const About = () => {
   return (
     <>
       <AboutHeroSlider />
-      <ClientsAndAbout />
-      <AboutDiscover />
+      {/* <ClientsAndAbout /> */}
+      {/* <AboutDiscover /> */}
       <Immigration />
       <OurVision/>
       <WhyChooseUs/>
       <MidAbout/>
       <BestVisaConsultant />
       <TeamSlider />
-      <AboutOpportunities />
+      {/* <AboutOpportunities /> */}
       <ContactUI />
     </>
   )

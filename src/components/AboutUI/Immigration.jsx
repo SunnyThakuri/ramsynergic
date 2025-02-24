@@ -3,22 +3,34 @@ const Immigration = () => {
   return (
     <div className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col lg:flex-row justify-between">
       <div className="left-side">
-        <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
-          WHAT WE DO
-        </h1>
+        <div className="flex flex-col-reverse md:flex-row justify-between">
+          <div>
+            <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
+              WHAT WE DO
+            </h1>
 
-        <p className="text-[#828282] w-full lg:w-[487px] mt-5">
-          At the heart of our operations, we excel in delivering bespoke
-          manpower solutions that cater to the unique requirements of our
-          clients, whether for short-term assignments or long-term projects.
-          Acknowledging that employees are the lifeblood of any organization, we
-          prioritize the delivery of reliable and trusted manpower services
-          across various sectors. We facilitate the supply of qualified
-          candidates across multiple sectors in different countries, leveraging
-          our expertise to provide exclusive manpower solutions in the UAE,
-          Nepal, India, Europe, and numerous organizations worldwide.
-        </p>
-        <h1 className="text-[#000000]  text-[24px] lg:text-[32px] font-semibold mt-4 lg:mt-6">
+            <p className="text-[#828282] w-full lg:w-[487px] mt-5">
+              At the heart of our operations, we excel in delivering bespoke
+              manpower solutions that cater to the unique requirements of our
+              clients, whether for short-term assignments or long-term projects.
+              Acknowledging that employees are the lifeblood of any organization, we
+              prioritize the delivery of reliable and trusted manpower services
+              across various sectors. We facilitate the supply of qualified
+              candidates across multiple sectors in different countries, leveraging
+              our expertise to provide exclusive manpower solutions in the UAE,
+              Nepal, India, Europe, and numerous organizations worldwide.
+            </p>
+          </div>
+        <div>
+         <img
+         src="https://img.freepik.com/free-photo/colleagues-working-project-discussing-details_114579-2817.jpg?t=st=1740384323~exp=1740387923~hmac=528e780c642db523be5bb66795a74907ace1677f4a15425e30864da99bbd530e&w=1380"
+         alt=""
+         className="w-full h-full object-cover"/>
+        </div>
+        </div>
+
+
+        <h1 className="text-[#000000]  text-[24px] lg:text-[32px] font-semibold mt-4 lg:mt-8">
           OUR MISSION
         </h1>
         <p className="text-[#828282] w-full lg:w-[487px] mt-5">
@@ -26,14 +38,14 @@ const Immigration = () => {
           and connecting the talents with opportunities on a global Scale. Our
           mission encompasses several pillars as follows:
         </p>
-        <div className="flex flex-col items-center justify-between gap-4 mx-6 mt-4">
+        <div className="flex flex-col items-center justify-between gap-4 md:gap-8  mt-8">
           <div className="flex flex-col md:flex-row gap-6 w-full h-full  justify-between">
             <div className="w-full">
-              <div className="space-y-3 w-full h-full shadow-lg px-4 py-2 rounded-lg">
+              <div className="space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
                 <h2 className="font-semibold text-xl">
                   Deliver Exceptional Services
                 </h2>
-                <p className="text-gray-400 text-justify pl-4">
+                <p className="text-gray-400 text-justify ">
                   We offer a comprehensive range of professional manpower
                   supply, training, and company representation services to
                   ensure complete client and partner satisfaction.
@@ -41,12 +53,12 @@ const Immigration = () => {
               </div>
             </div>
             <div className="w-full ">
-              <div className=" space-y-3 w-full h-full shadow-lg px-4 py-2 rounded-lg">
+              <div className=" space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
                 <h2 className="font-semibold text-xl">
                   {" "}
                   Efficient Recruitment
                 </h2>
-                <p className="text-gray-500 text-justify pl-4">
+                <p className="text-gray-500 text-justify ">
                   We streamline the recruitment process by systematically and
                   efficiently shortlisting applicants, reducing delays and
                   ensuring timely deployment.
@@ -56,11 +68,11 @@ const Immigration = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-6  justify-between ">
             <div className="w-full">
-              <div className="space-y-3 w-full h-full shadow-lg px-4 py-2 rounded-lg">
+              <div className="space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
                 <h2 className="font-semibold text-xl">
                   Legal Employment Opportunities
                 </h2>
-                <p className="text-gray-500 text-justify pl-4">
+                <p className="text-gray-500 text-justify ">
                   We provide legal employment opportunities to professional,
                   skilled, semi-skilled, or unskilled workers, connecting them
                   with reputable employers.
@@ -68,11 +80,11 @@ const Immigration = () => {
               </div>
             </div>
             <div className="w-full">
-              <div className="space-y-1 shadow-lg w-full h-full  rounded-lg px-4 py-2">
+              <div className="space-y-1 shadow-lg w-full h-full  rounded-lg px-4 py-4">
                 <h2 className="font-semibold text-xl">
                   Building Strong Relationships
                 </h2>
-                <p className="text-gray-500 text-justify  pl-4">
+                <p className="text-gray-500 text-justify  ">
                   We foster healthy and trustworthy relationships between
                   employers and employees, promoting a positive and productive
                   work environment.

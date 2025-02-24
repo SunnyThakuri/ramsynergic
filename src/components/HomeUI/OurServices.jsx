@@ -8,7 +8,6 @@ import slideright from "../../assets/HomeUI/slideright.png";
 import slideleft from "../../assets/HomeUI/slideleft.png"; */
 import "../../style/OurServicesSlider.css";
 import { useNavigate } from "react-router-dom";
-import PropTypes from "prop-types";
 const OurServices = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   console.log(activeIndex);
@@ -39,15 +38,6 @@ const OurServices = () => {
       </div>
     );
   }
-  SampleNextArrow.propTypes = {
-    style: PropTypes.object,
-    onClick: PropTypes.func,
-  };
-
-  SamplePrevArrow.propTypes = {
-    style: PropTypes.object,
-    onClick: PropTypes.func,
-  };
   const settings = {
     dots: false,
     infinite: true,

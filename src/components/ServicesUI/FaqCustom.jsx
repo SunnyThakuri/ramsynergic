@@ -44,7 +44,7 @@ function FaqCustom() {
         />
       </div>
       <div
-      className=" relative w-full px-20 lg:px-72 py-12 bg-[#00264F]  text-white"
+      className=" relative w-full px-4 md:px-20 lg:px-72 py-12 bg-[#00264F]  text-white"
       >
        <form 
        onSubmit={handleSubmit}
@@ -62,13 +62,14 @@ function FaqCustom() {
         placeholder="Drop your question here !!!"
         onChange={handleChange}
         required
+        rows={5}
         minLength={5}
         ></textarea>
        
        
         
         <div
-        className="flex flex-col md:flex-row gap-3 md:gap-4"
+        className="flex flex-col md:flex-row gap-4"
         >
         <input
         placeholder="Full Name"
@@ -99,7 +100,7 @@ function FaqCustom() {
         />
         </div>
         <button type="submit"
-        className="mx-auto w-fit px-12 border-4 mt-28  py-2 font-bold hover:bg-gray-200 hover:text-black text-gtay-100 rounded-lg"
+        className="mx-auto w-fit px-12 border-2 mt-28  py-2 font-bold hover:bg-gray-200 hover:text-black text-gtay-100 rounded-lg"
         >Submit</button>
        </form>
            {isSuccess &&  <p 

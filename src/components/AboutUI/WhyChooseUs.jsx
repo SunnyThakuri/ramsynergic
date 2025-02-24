@@ -3,7 +3,7 @@
 function WhyChooseUs() {
   return (
     <div
-    className=" mt-32 flex flex-col lg:flex-row items-center justify-between gap-2"
+    className=" mt-32 md:px-24 px-4 flex flex-col lg:flex-row items-center justify-between lg:gap-36"
     >
       <div
       className="flex flex-col md:items-center "
@@ -25,10 +25,10 @@ function WhyChooseUs() {
       className="flex flex-col gap-4"
       >
         <div
-        className=" border-4 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
+        className=" border-2 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
         >
             <div
-            className="w-32 md:w-36 "
+            className="w-24 md:w-36 "
             >
                 <img 
                 className="w-full h-full object-cover "
@@ -37,24 +37,20 @@ function WhyChooseUs() {
             <div
             className="flex flex-col items-center "
             >
-            <h2
-            className="text-2xl md:text-3xl my-4 "
-            >
+            <h2  className="text-2xl md:text-3xl my-4 ">
             Expertise
             </h2>
-            <p
-            className="text-lg md:text-xl text-[#828282] text-center mx-8"
-            >
+            <p  className="text-lg md:text-xl text-[#828282] text-center mx-8">
             Unparalleled knowledge and expertise in recruitment, delivering exceptional solutions.
 
             </p>
             </div>
         </div>
         <div
-        className=" border-4 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
+        className=" border-2 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
         >
             <div
-            className="w-32 md:w-36 "
+            className="w-24 md:w-36 "
             >
                 <img 
                 className="w-full h-full object-cover "
@@ -77,10 +73,10 @@ function WhyChooseUs() {
             </div>
         </div>
         <div
-        className=" border-4 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
+        className=" border-2 rounded-lg flex flex-col md:flex-row md:px-4 items-center py-8 "
         >
             <div
-            className="w-32 md:w-36 "
+            className="w-24 md:w-36 "
             >
                 <img 
                 className="w-full h-full object-cover "

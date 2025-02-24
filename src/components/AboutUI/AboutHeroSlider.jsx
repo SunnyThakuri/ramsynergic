@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../style/AboutSlider.css";
 import arrow from "../../assets/HomeUI/arrow.png";
-import PropTypes from "prop-types"
 const AboutHeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -31,15 +30,7 @@ const AboutHeroSlider = () => {
       </div>
     );
   }
-  SampleNextArrow.propTypes = {
-    style: PropTypes.object,
-    onClick: PropTypes.func,
-  };
-  
-  SamplePrevArrow.propTypes = {
-    style: PropTypes.object,
-    onClick: PropTypes.func,
-  };
+
   const settings = {
     dots: false,
     infinite: true,
