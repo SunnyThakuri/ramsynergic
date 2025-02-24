@@ -27,8 +27,6 @@ const Home = () => {
       {/* <Testimonials /> no need */}
      
       <ContactUI />
-       {/* <AboutUs /> */}
-       {/* <MainSectir/> */}
        
     </>
   )

@@ -3,21 +3,33 @@ const Immigration = () => {
   return (
     <div className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col lg:flex-row justify-between">
       <div className="left-side">
-        <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
-          WHAT WE DO
-        </h1>
+        <div className="flex flex-col-reverse md:flex-row justify-between">
+          <div>
+            <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
+              WHAT WE DO
+            </h1>
 
-        <p className="text-[#828282] w-full lg:w-[487px] mt-5">
-          At the heart of our operations, we excel in delivering bespoke
-          manpower solutions that cater to the unique requirements of our
-          clients, whether for short-term assignments or long-term projects.
-          Acknowledging that employees are the lifeblood of any organization, we
-          prioritize the delivery of reliable and trusted manpower services
-          across various sectors. We facilitate the supply of qualified
-          candidates across multiple sectors in different countries, leveraging
-          our expertise to provide exclusive manpower solutions in the UAE,
-          Nepal, India, Europe, and numerous organizations worldwide.
-        </p>
+            <p className="text-[#828282] w-full lg:w-[487px] mt-5">
+              At the heart of our operations, we excel in delivering bespoke
+              manpower solutions that cater to the unique requirements of our
+              clients, whether for short-term assignments or long-term projects.
+              Acknowledging that employees are the lifeblood of any organization, we
+              prioritize the delivery of reliable and trusted manpower services
+              across various sectors. We facilitate the supply of qualified
+              candidates across multiple sectors in different countries, leveraging
+              our expertise to provide exclusive manpower solutions in the UAE,
+              Nepal, India, Europe, and numerous organizations worldwide.
+            </p>
+          </div>
+        <div>
+         <img
+         src="https://img.freepik.com/free-photo/colleagues-working-project-discussing-details_114579-2817.jpg?t=st=1740384323~exp=1740387923~hmac=528e780c642db523be5bb66795a74907ace1677f4a15425e30864da99bbd530e&w=1380"
+         alt=""
+         className="w-full h-full object-cover"/>
+        </div>
+        </div>
+
+
         <h1 className="text-[#000000]  text-[24px] lg:text-[32px] font-semibold mt-4 lg:mt-8">
           OUR MISSION
         </h1>
