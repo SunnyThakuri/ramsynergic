@@ -15,7 +15,7 @@ const TalentAcquisition = () => {
         </div>
 
         <div className="right_side">
-          <div className="flex md:justify-normal justify-center space-x-2 ">
+          <div className="flex md:justify-normal  space-x-2 ">
             <img className='w-[10px] h-[20px] mt-2' src={zerozerofive} alt="" />
             <h1 className='text-[#000000] font-semibold text-[22px]'>Talent Acquisition</h1>
           </div>
