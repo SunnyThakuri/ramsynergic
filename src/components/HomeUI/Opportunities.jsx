@@ -21,7 +21,7 @@ const Opportunities = () => {
 
           <div className="btn   flex  justify-center lg:justify-normal lg:mb-0 mb-20">
             <button className='bg-[#00264F] mt-[40px] text-[#F7F7F7] px-5 py-3 rounded-[4px] flex'>Apply Now
-              <p className='w-[12px] h-[1px] mx-2'><i class="fa-solid fa-arrow-right"></i></p>
+              <p className='w-[12px] h-[1px] mx-2'><i className="fa-solid fa-arrow-right"></i></p>
             </button>
           </div>
         </div>
@@ -30,13 +30,13 @@ const Opportunities = () => {
         <div className="right_side ">
 
           <div className="relative flex items-center lg:justify-end justify-center" >
-            <div className="w-[414px] h-[414px] border-2 border-dashed  border-black rounded-full flex items-center justify-center">
-              <img className='w-[353px] h-[353px]' src={user} alt="" />
+            <div className=" w-[350px] md:w-[414px] h-[350px] md:h-[414px] border-2 border-dashed  border-black rounded-full flex items-center justify-center">
+              <img className='w-[300px] h-[300px] md:w-[353px] md:h-[353px]' src={user} alt="" />
               <div className="absolute animate-spin-circle" style={{ animationDelay: '0s' }}>
                 <h1 className='w-6 h-6 bg-[#187FF8] rounded-full'></h1>
               </div>
 
-              <div className="absolute animate-spin-circle" style={{ animationDelay: '1s' }}>
+              <div className="absolute  animate-spin-circle" style={{ animationDelay: '1s' }}>
                 <h1 className='w-6 h-6 bg-[#4BD7A4] rounded-full'></h1>
               </div>
 

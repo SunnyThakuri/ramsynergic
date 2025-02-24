@@ -1,6 +1,5 @@
 import React from 'react'
 import footerlogo1 from "../../assets/Header/footerlogo1.png"
-import footerlogo2 from "../../assets/Header/footerlogo2.png"
 import facbook from "../../assets/HomeUI/facebook.png"
 import google from "../../assets/HomeUI/google.png"
 import tiktok from "../../assets/HomeUI/tiktok.png"
@@ -16,11 +15,10 @@ const Footer = () => {
         <div className="items md:flex md:justify-between grid sm:grid-cols-3  pt-[40px] gap-10">
 
           <div className="logo  sm:col-span-2 ">
-            <div className="images flex sm:justify-normal justify-center space-x-5">
+            <div className="images flex sm:justify-normal  space-x-5">
               <img
                 className='sm:w-full w-[100px]' src={footerlogo1} alt="" />
-              <img
-                className='sm:w-full w-[100px]' src={footerlogo2} alt="" />
+             
             </div>
             <h1 className='text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center'>Global Connect Consulting Services in Hongkong and Masah Allbdha Documents Clearing Services in UAE</h1>
           </div>

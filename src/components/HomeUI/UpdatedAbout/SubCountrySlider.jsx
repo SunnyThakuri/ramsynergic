@@ -6,10 +6,10 @@ function SubCountrySlider() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoPlay({stopOnInteraction:false})]);
 
   return (
-    <div className="relative overflow-hidden mx-4 mt-12 fill-slate-400"> {/* Prevents scrolling */}
+    <div className="relative overflow-hidden mx-4 mt-12 fill-slate-400"> 
       <div className="overflow-hidden" ref={emblaRef}>
-        {/* Embla track (flex container) */}
-        <div className="flex"> {/* Limits width to prevent scrolling */}
+      
+        <div className="flex"> 
           {/* first */}
          <div
          className="w-full flex-shrink-0 shadow-md flex flex-col items-center justify-center gap-4 "
@@ -19,7 +19,7 @@ function SubCountrySlider() {
           >European Countries</h2>
          <div className=" flex items-center flex-wrap gap-3   justify-center  mx-4 ">
            
-           {countrySellected.map((country)=> (
+           {countrySellected.slice(0,11).map((country)=> (
             <div
             key={country.id}
             className=" w-10 h-7 md:w-14 md:h-8 shadow-xl "
@@ -27,6 +27,7 @@ function SubCountrySlider() {
               <img 
               src={country.flag}
               className="w-full h-full object-stretch"
+              
               />
                </div>
            ))}

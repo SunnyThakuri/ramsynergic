@@ -6,12 +6,14 @@ import Router from "../router/Router"
 const Layout = () => {
   return (
     <>
-      <div>
-        <Header />
+      <div
+      className='font-Poppins'
+      >
+         <Header /> 
         <div>
           <Router />
         </div>
-        <Footer />
+     <Footer />
       </div>
     </>
   )

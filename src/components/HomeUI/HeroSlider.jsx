@@ -87,11 +87,11 @@ const HeroSlider = () => {
         <Slider {...settings} className="w-full font-Poppins">
           <div className="slider01 h-[300px] lg:h-[564px] flex items-center justify-start">
             <div className="slider__content 2xl:pl-[166.5px] xl:pl-[100px] lg:pl-[80px] md:pl-[50px] sm:pl-[50px] pl-[10px] pt-5 lg:pt-[128px]">
-              <h1 className="text-[#cee2f1] text-[24px] lg:text-[58px] font-bold">
-                Unlocking Opportunities,
+              <h1 className="text-[#cee2f1] capitalize text-[24px] lg:text-[58px] font-bold">
+              Connecting talents 
               </h1>
-              <h1 className="text-[24px] lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
-                Empowering Careers
+              <h1 className="text-[24px] capitalize lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
+              with global opportunities
               </h1>
               <p className="text-[#D9D9D9] font-semibold">
                 Get to Work With the Leading Recruitment Agency in UAE
@@ -112,11 +112,11 @@ const HeroSlider = () => {
           {/* -----------slider02----------------- */}
           <div className="slider02 h-[300px] lg:h-[564px] flex items-center justify-start">
             <div className="slider__content  2xl:pl-[166.5px] xl:pl-[100px] lg:pl-[80px] md:pl-[50px] sm:pl-[50px] pl-[10px] pt-5 lg:pt-[128px]">
-              <h1 className="text-[#84CCFF] text-[24px] lg:text-[58px] font-bold">
-                Unlocking Opportunities,
+              <h1 className="text-[#84CCFF] capitalize text-[24px] lg:text-[58px] font-bold">
+              Connecting talents 
               </h1>
-              <h1 className="text-[24px] lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
-                Empowering Careers
+              <h1 className="text-[24px] capitalize lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
+              with global opportunities
               </h1>
               <p className="text-[#D9D9D9] font-semibold">
                 Get to Work With the Leading Recruitment Agency in UAE
@@ -137,11 +137,11 @@ const HeroSlider = () => {
           {/* -----------slider03----------------- */}
           <div className="slider03 h-[300px]  lg:h-[564px] flex items-center justify-start">
             <div className="slider__content 2xl:pl-[166.5px] xl:pl-[100px] lg:pl-[80px] md:pl-[50px] sm:pl-[50px] pl-[10px]  pt-5 lg:pt-[128px]">
-              <h1 className="text-[#84CCFF] text-[24px] lg:text-[58px] font-bold">
-                Unlocking Opportunities,
+              <h1 className="text-[#84CCFF] capitalize text-[24px] lg:text-[58px] font-bold">
+              Connecting talents 
               </h1>
-              <h1 className="text-[24px] lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
-                Empowering Careers
+              <h1 className="text-[24px] capitalize lg:text-[58px] -mt-2 lg:-mt-[17px] text-white font-bold">
+              with global opportunities
               </h1>
               <p className="text-[#D9D9D9] font-semibold">
                 Get to Work With the Leading Recruitment Agency in UAE
