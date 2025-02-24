@@ -6,7 +6,6 @@ function Country() {
     const {name}= useParams()
   return (
     <div>
-      Country {name}
       <Croatia
       country={name}
       />

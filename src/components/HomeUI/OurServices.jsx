@@ -94,7 +94,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <Slider {...settings} className="mt-12 h-[400px]   relative">
+        <Slider {...settings} className="mt-12  h-[400px]   relative">
           <div
             className={` md:w-fit group    pb-16  md:pl-5 pl-4 h-full  cursor-pointer  `}
           >
