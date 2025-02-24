@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <AboutHeroSlider />
-      <ClientsAndAbout />
+      {/* <ClientsAndAbout /> */}
       <AboutDiscover />
       <Immigration />
       <OurVision/>
