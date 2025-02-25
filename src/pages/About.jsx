@@ -16,10 +16,10 @@ const About = () => {
     <>
       <AboutHeroSlider />
       {/* <ClientsAndAbout /> */}
-      <AboutDiscover />
       <Immigration />
-      <OurVision/>
+      <AboutDiscover />
       <WhyChooseUs/>
+      <OurVision/>
       <MidAbout/>
       <BestVisaConsultant />
       <TeamSlider />
