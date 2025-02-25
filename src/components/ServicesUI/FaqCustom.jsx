@@ -57,7 +57,7 @@ function FaqCustom() {
         <textarea
         
         name="faq" id="faq"
-        className=" w-full text-black px-2 py-1 rounded-md h-32"
+        className=" w-full text-black px-2 py-1 outline-none rounded-md h-32"
         value={formdata.faq}
         placeholder="Drop your question here !!!"
         onChange={handleChange}
@@ -74,7 +74,7 @@ function FaqCustom() {
         <input
         placeholder="Full Name"
         type="text" 
-        className=" p-2 w-full text-black rounded-md"
+        className=" p-2 w-full text-black outline-none rounded-md"
         name="name"
         value={formdata.name}
         onChange={handleChange}
@@ -85,7 +85,7 @@ function FaqCustom() {
         <input
         placeholder="Email"
         type="email" name="email"
-        className=" w-full text-black p-2 rounded-md"
+        className=" w-full text-black p-2 outline-none rounded-md"
         value={formdata.email}
         onChange={handleChange}
         required
@@ -93,7 +93,7 @@ function FaqCustom() {
         <input
         placeholder="Contact Number"
         type="number" name="phone"
-        className=" w-full text-black p-2 rounded-md"
+        className=" w-full text-black p-2 outline-none rounded-md"
         value={formdata.phone}
         onChange={handleChange}
         required

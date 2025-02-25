@@ -9,7 +9,7 @@ const ContactUI = () => {
       <div className="all bg-gradient-to-r from-[#0D697D] to-[#1B92AD] ... 2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] sm:mx-[20px] mt-[100px] sm:rounded-[12px] ">
         <div className="items flex md:justify-around justify-between xl:px-[80px] lg:px-[40px] md:px-[20px]">
           <div className="img">
-            <img className="h-full" src={userImg} alt="" />
+            <img className="h-full object-contain object-bottom" src={userImg} alt="" />
           </div>
 
           <div className="text pt-[69px] sm:pr-0 pr-5">
