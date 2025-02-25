@@ -1,0 +1,8 @@
+select{
+width: fit-content;
+}
+select option{
+    width:fit-content;
+    padding: 0;
+    margin: 0;
+}
