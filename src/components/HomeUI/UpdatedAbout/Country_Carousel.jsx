@@ -58,7 +58,7 @@ const EmblaCarousel = () => {
 
                   {/* Flag Display */}
                   <div
-                    className={`absolute top-4 right-2 md:right-9 ${
+                    className={`absolute top-4 right-2 md:right-5 ${
                       eh.schengen ? "scale-75 right-1 top-2 brightness-100" : ""
                     } md:scale-100 md:top-4 md:right-6 flex gap-1`}
                   >
