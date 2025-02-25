@@ -4,7 +4,7 @@ const AboutDiscover = () => {
   return (
     <>
       <div className="dicover 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px] mt-[124px] bg-[#00254F] font-Poppins">
-        <h1 className=" md:text-[20px] text-white  md:font-semibold md:text-center xl:px-[260px] lg:px-[150px] md:px-[50px] sm:px-[20px]  pt-[120px]">
+        <h1 className=" md:text-[20px] text-white  md:font-semibold md:text-center xl:px-[260px] lg:px-[150px] md:px-[50px] sm:px-[20px] pt-14  md:pt-[120px]">
         We have our extensive network across various nations who
               are specialize in crafting solutions for aspirants seeking second
               citizenship or residences in coveted locales.
