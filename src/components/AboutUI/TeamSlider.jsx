@@ -68,7 +68,7 @@ const TeamSlider = () => {
   }
   return (
     <>
-      <div className="Courses  mt-[100px]">
+      <div className="Courses px-4 mt-[100px]">
 
         <div className="left_side xl:w-[20%] lg:w-[30%]  lg:absolute xl:left-[80px] lg:left-[50px] xl:mt-[80px] lg:mt-[30px]">
           <h1 className="text-[#2C2C2C] w-[325px] text-[32px] font-semibold">Meet our team
@@ -78,18 +78,18 @@ const TeamSlider = () => {
         </div>
       </div>
 
-      <Slider {...settings} className="xl:ml-[700px] lg:ml-[500px] mx-10 lg:my-[100px] my-10 cursor-pointer gap-5 ">
-        <div className="slider1  shadow-lg rounded-lg overflow-hidden">
+      <Slider {...settings} className="xl:ml-[700px] lg:ml-[500px]  mx-10 lg:my-[100px] my-10 cursor-pointer gap-5 ">
+        <div className="slider1 px-5  shadow-lg rounded-lg overflow-hidden">
           <div className="images">
-            <img className="w-full md:w-[350px]" src={team1} alt="Mark Brown" />
+            <img className="w-full h-[350px] md:h-auto md:w-[350px]" src={team1} alt="Mark Brown" />
           </div>
           <h1 className="text-[#333333] text-[22px] w-full font-bold mt-5">Mark Brown</h1>
           <h1 className="text-[#333333]">CEO</h1>
         </div>
 
-        <div className="slider1 px-[20px] shadow-lg rounded-lg overflow-hidden">
+        <div className="slider1 px-5 shadow-lg rounded-lg overflow-hidden ">
           <div className="images">
-            <img className="w-full md:w-[350px]" src={team2} alt="Mezie Basig" />
+            <img className="w-full md:w-[350px] h-[350px] md:h-auto" src={team2} alt="Mezie Basig" />
           </div>
           <h1 className="text-[#333333] text-[22px] w-full font-bold mt-5">Mezie Basig</h1>
           <h1 className="text-[#333333]">Co-Founder</h1>
