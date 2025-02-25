@@ -3,7 +3,7 @@ const Immigration = () => {
   return (
     <div className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col lg:flex-row justify-between">
       <div className="left-side">
-        <div className="flex flex-col-reverse md:flex-row justify-between">
+        <div className="flex flex-col-reverse gap-4 md:flex-row justify-between">
           <div>
             <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
               WHAT WE DO
@@ -33,7 +33,7 @@ const Immigration = () => {
         <h1 className="text-[#000000]  text-[24px] lg:text-[32px] font-semibold mt-4 lg:mt-8">
           OUR MISSION
         </h1>
-        <p className="text-[#828282] w-full lg:w-[487px] mt-5">
+        <p className="text-[#828282] w-full lg:w-[487px]  mt-5">
           Our core mission is to revolutionizing the human resource landscaping
           and connecting the talents with opportunities on a global Scale. Our
           mission encompasses several pillars as follows:
@@ -42,7 +42,7 @@ const Immigration = () => {
           <div className="flex flex-col md:flex-row gap-6 w-full h-full  justify-between">
             <div className="w-full">
               <div className="space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
-                <h2 className="font-semibold text-xl">
+                <h2 className="font-semibold md:text-xl">
                   Deliver Exceptional Services
                 </h2>
                 <p className="text-gray-400 text-justify ">
@@ -54,7 +54,7 @@ const Immigration = () => {
             </div>
             <div className="w-full ">
               <div className=" space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
-                <h2 className="font-semibold text-xl">
+                <h2 className="font-semibold md:text-xl">
                   {" "}
                   Efficient Recruitment
                 </h2>
@@ -69,7 +69,7 @@ const Immigration = () => {
           <div className="flex flex-col md:flex-row gap-6  justify-between ">
             <div className="w-full">
               <div className="space-y-3 w-full h-full shadow-lg px-4 py-4 rounded-lg">
-                <h2 className="font-semibold text-xl">
+                <h2 className="font-semibold md:text-xl">
                   Legal Employment Opportunities
                 </h2>
                 <p className="text-gray-500 text-justify ">
@@ -81,7 +81,7 @@ const Immigration = () => {
             </div>
             <div className="w-full">
               <div className="space-y-1 shadow-lg w-full h-full  rounded-lg px-4 py-4">
-                <h2 className="font-semibold text-xl">
+                <h2 className="font-semibold md:text-xl">
                   Building Strong Relationships
                 </h2>
                 <p className="text-gray-500 text-justify  ">

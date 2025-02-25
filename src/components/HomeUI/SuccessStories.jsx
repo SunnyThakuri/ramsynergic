@@ -83,7 +83,7 @@ const CustomSlider = () => {
               <img src={user2} alt="" className="h-24 w-24 rounded-full object-cover" />
             </div>
             <h1 className="text-center pt-3 text-[22px] text-[#2C2C2C] font-semibold">
-              Wanda Maximoff
+              Wanda 
             </h1>
             <h1 className="text-center text-sm md:text-md pt-3">Driver at Tyuv Ine / Poland </h1>
             <p className="px-1 md:text-justify hidden sm:block  text-[#333333] pt-5 md:px-4 ">
