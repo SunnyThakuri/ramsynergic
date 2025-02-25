@@ -16,7 +16,7 @@ const CustomSlider = () => {
         className="successStories hidden md:block forward-arrow  right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
-        <p className="rotate-180 sm:text-[12px] text-[10px] text-white  ">
+        <p className="rotate-180 relative top-1.5 right-3.5 sm:text-[12px] text-[10px] text-white  ">
           <i className="fa-solid fa-play"></i>
         </p>
       </div>
@@ -27,10 +27,10 @@ const CustomSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="successStories hidden md:block backward-arrow right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="successStories hidden md:block backward-arrow right-12 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
-        <p className="text-[#00254F] sm:text-[12px] text-[10px] ">
+        <p className="text-[#00254F] relative top-2.5 left-3.5 sm:text-[12px] text-[10px] ">
           <i className="fa-solid fa-play"></i>
         </p>
       </div>
@@ -43,7 +43,7 @@ const CustomSlider = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: false,
-    centerPadding: "0",
+    centerPadding: "",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
@@ -80,10 +80,10 @@ const CustomSlider = () => {
           </div>
           <div className="slide01  w-[300px] md:w-[607px] border-[10px] border-[#00254F] py-12  md:h-[413px] rounded-[12px] bg-white  ">
             <div className="img flex  justify-center md:pt-[60px]">
-              <img src={user1} alt="" />
+              <img src={user2} alt="" className="h-24 w-24 rounded-full object-cover" />
             </div>
             <h1 className="text-center pt-3 text-[22px] text-[#2C2C2C] font-semibold">
-              Rome Vuyvt
+              Wanda Maximoff
             </h1>
             <h1 className="text-center text-sm md:text-md pt-3">Driver at Tyuv Ine / Poland </h1>
             <p className="px-1 md:text-justify hidden  text-[#333333] pt-5 md:px-4 ">
@@ -94,10 +94,10 @@ const CustomSlider = () => {
           </div>
           <div className="slide01  w-[300px] md:w-[607px] border-[10px] border-[#00254F] py-12  md:h-[413px] rounded-[12px] bg-white  ">
             <div className="img flex  justify-center md:pt-[60px]">
-              <img src={user1} alt="" />
+              <img src={user3} alt="" className="h-24 w-24 rounded-full object-cover" />
             </div>
             <h1 className="text-center pt-3 text-[22px] text-[#2C2C2C] font-semibold">
-              Rome Vuyvt
+              Steven Grantt
             </h1>
             <h1 className="text-center text-sm md:text-md pt-3">Driver at Tyuv Ine / Poland </h1>
             <p className="px-1 md:text-justify hidden  text-[#333333] pt-5 md:px-4 ">
@@ -108,10 +108,10 @@ const CustomSlider = () => {
           </div>
           <div className="slide01  w-[300px] md:w-[607px] border-[10px] border-[#00254F] py-12  md:h-[413px] rounded-[12px] bg-white  ">
             <div className="img flex  justify-center md:pt-[60px]">
-              <img src={user1} alt="" />
+              <img src={user4} alt="" className="h-24 w-24 rounded-full object-cover"/>
             </div>
             <h1 className="text-center pt-3 text-[22px] text-[#2C2C2C] font-semibold">
-              Rome Vuyvt
+              Mark Spector
             </h1>
             <h1 className="text-center text-sm md:text-md pt-3">Driver at Tyuv Ine / Poland </h1>
             <p className="px-1 md:text-justify hidden  text-[#333333] pt-5 md:px-4 ">

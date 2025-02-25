@@ -5,7 +5,7 @@ import user from "../../assets/HomeUI/opportunities.png";
 const Opportunities = () => {
   return (
     <>
-      <div className="all-items overflow-hidden lg:flex lg:justify-between  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] font-Poppins mt-[129.6px]">
+      <div className="all-items overflow-hidden md:overflow-visible lg:flex lg:justify-between  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] font-Poppins mt-[129.6px]">
 
         <div className="left_side lg:space-y-0 ">
           <h1 className='text-[#007BFF] font-semibold lg:text-left text-center'>Unlocking International Opportunities</h1>
@@ -30,7 +30,7 @@ const Opportunities = () => {
         <div className="right_side  ">
 
           <div className="relative flex items-center lg:justify-end justify-center" >
-            <div className=" w-[320px] md:w-[414px] h-[320px] md:h-[414px] border-2 border-dashed  border-black rounded-full flex items-center justify-center">
+            <div className=" w-[300px] md:w-[414px] h-[300px] md:h-[414px] border-2 border-dashed  border-black rounded-full flex items-center justify-center">
               <img className='w-[250px] h-[250px] md:w-[353px] md:h-[353px]' src={user} alt="" />
               <div className="absolute  animate-spin-circle" style={{ animationDelay: '0s' }}>
                 <h1 className='w-6 h-6 bg-[#187FF8] rounded-full'></h1>
