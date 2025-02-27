@@ -52,7 +52,7 @@ const Footer = () => {
                 <span className='text-[#CFCFCF]'>Hungary</span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Slovakia </span>
+                <span className='text-[#CFCFCF]'>Slovakia</span>
               </li>
               <li className='text-[#007BFF]'>
                 <span className='text-[#CFCFCF]'>Croatia</span>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <span className='text-[#CFCFCF]'>Albania</span>
               </li>
               <li className='text-[#007BFF]'>
-                <span className='text-[#CFCFCF]'>Romania </span>
+                <span className='text-[#CFCFCF]'>Romania</span>
               </li>
               <li className='text-[#007BFF]'>
                 <span className='text-[#CFCFCF]'>Norway</span>
@@ -106,7 +106,7 @@ const Footer = () => {
               <h1 className='font-semibold'>COUNTRIES</h1>
               <ul className='list-outside list-disc pl-5 pt-[12px]'>
                 <li className='text-[#007BFF]'>
-                  <span className='text-[#CFCFCF]'>Hongkong</span>
+                  <span className='text-[#CFCFCF]'>Hungary</span>
                 </li>
                 <li className='text-[#007BFF]'>
                   <span className='text-[#CFCFCF]'>Slovakia </span>
@@ -115,16 +115,16 @@ const Footer = () => {
                   <span className='text-[#CFCFCF]'>Croatia</span>
                 </li>
                 <li className='text-[#007BFF]'>
-                  <span className='text-[#CFCFCF]'>Spain</span>
+                  <span className='text-[#CFCFCF]'>Bulgaria</span>
                 </li>
                 <li className='text-[#007BFF]'>
-                  <span className='text-[#CFCFCF]'>Lithuania</span>
+                  <span className='text-[#CFCFCF]'>Albania</span>
                 </li>
                 <li className='text-[#007BFF]'>
-                  <span className='text-[#CFCFCF]'>Australia </span>
+                  <span className='text-[#CFCFCF]'>Romania</span>
                 </li>
                 <li className='text-[#007BFF]'>
-                  <span className='text-[#CFCFCF]'>Canada</span>
+                  <span className='text-[#CFCFCF]'>Norway</span>
                 </li>
                 <li className='text-[#007BFF]'>
                   <span className='text-[#CFCFCF]'>GCC</span>

@@ -131,20 +131,20 @@ function ContactForm() {
           )}
           {work === "Work" && (
             <div className="flex flex-col gap-4">
-              <div className="flex flex-col w-fit gap-5">
+              <div className="flex flex-col w-fit gap-5 relative">
                 <h2
                   onClick={() => setActive(!active)}
-                  className="flex border-gray-300 cursor-pointer border px-6 py-2 rounded-md focus:ring-2 focus:ring-blue-400 font-semibold "
+                  className={` relative flex border-gray-300  cursor-pointer border px-6 py-2 rounded-md focus:ring-2 focus:ring-blue-400 font-semibold ${active?"bg-[#00264F] text-white":""}`}
                 >
                   Choose Your destination
                 </h2>
                 {active && (
-                  <div className="flex flex-col gap-4">
-                    <div className="flex flex-col md:flex-row gap-4">
+                  <div className="  flex flex-col gap-4 w-fit border border-gray-300 bg-white -mt-4 py-2 px-4 rounded-md">
+                    <div className="flex flex-col w-full mx-auto md:flex-row gap-4">
                       <p
                         onClick={() => setDestination("EU")}
                         className={`flex w-full border-gray-300 border px-6 py-2 rounded-md focus:ring-2 focus:ring-blue-400 font-semibold ${
-                          destination == "EU" ? "bg-blue-400" : ""
+                          destination == "EU" ? "bg-[#00254F] text-white" : ""
                         } cursor-pointer`}
                       >
                         European Country
@@ -156,7 +156,7 @@ function ContactForm() {
                           <select
                             name="EU"
                             id="EU"
-                            className="p-2 max-w-[250px]  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
+                            className="p-2 max-w-[250px] border  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
                           >
                             <option className="text-xs md:text-lg" value="" disabled >
                               European Country
@@ -177,11 +177,11 @@ function ContactForm() {
                       )}
                     </div>
                     
-                    <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex flex-col w-full md:flex-row gap-4">
                       <p
                         onClick={() => setDestination("GCC")}
-                        className={`flex border-gray-300 border px-6 py-2 rounded-md focus:ring-2 focus:ring-blue-400 font-semibold ${
-                          destination == "GCC" ? "bg-blue-400" : ""
+                        className={`flex w-full border-gray-300 border px-6 py-2 rounded-md focus:ring-2 focus:ring-blue-400 font-semibold ${
+                          destination == "GCC" ? "bg-[#00254F] text-white" : ""
                         } `}
                       >
                         GCC Country
@@ -192,7 +192,7 @@ function ContactForm() {
                             name="EU"
                             id="EU"
                             
-                            className="p-2 max-w-[250px]  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
+                            className="p-2 max-w-[250px] border  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
                           >
                             <option className="text-xs w-fit md:text-lg" value="" disabled >
                               GCC Country
@@ -241,7 +241,7 @@ function ContactForm() {
                 <select
                             name="visit"
                             id="visit"
-                            className="p-2 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
+                            className="p-2 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border border-gray-300 font-semibold text-[#333]"
                           >
                             <option className="text-xs md:text-lg" value="" disabled selected>
                               Select Country

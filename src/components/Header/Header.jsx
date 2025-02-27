@@ -7,7 +7,7 @@ const Header = () => {
   const menuRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [clickedText, setClickedText] = useState("Home");
-
+  const [active,setActive]=useState(false)
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
   const getTextClasses = (text) => {
@@ -94,33 +94,35 @@ const Header = () => {
               </h1>
             </NavLink>
 
-            <div className="dropdown relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
-              <h1 className="">
+            <div className="dropdown  relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
+              <h1 className="group"
+              
+              >
                 Countries{" "}
                 <i className="fa-solid fa-chevron-down ml-2 text-[12px]"></i>
               </h1>
               <div className="dropdown-content py-5 text-[12px] font-Poppins absolute bg-white shadow-md">
-                <NavLink to="/hungary">
+                <NavLink to="/country/Hungary">
                   <h1 className="border-b pb-2 text-center border-b-[#E8E8E8]">
                     Hungary
                   </h1>
                 </NavLink>
-                <NavLink to="/australia">
+                <NavLink to="/country/Australia">
                   <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
                     Australia
                   </h1>
                 </NavLink>
-                <NavLink to="/canada">
+                <NavLink to="/country/Canada">
                   <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
                     Canada
                   </h1>
                 </NavLink>
-                <NavLink to="/hongkong">
+                <NavLink to="country/Hungary">
                   <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
-                    Hongkong
+                    Hungary
                   </h1>
                 </NavLink>
-                <NavLink to="/spain">
+                <NavLink to="country/Spain">
                   <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
                     Spain
                   </h1>

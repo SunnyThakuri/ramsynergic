@@ -32,7 +32,7 @@ const Croatia = ({country}) => {
               for skilled and talented workers.</h1>
 
             <h1 className='mt-[30px] text-justify sm:pr-10'>
-              Beyond the robust manufacturing and tech industries, Hungary also boasts
+              Beyond the robust manufacturing and tech industries, {country} also boasts
               a highly developed financial services sector, with the capital city of Budapest serving as a prominent regional financial center that hosts the headquarters
               of many multinational banks and financial institutions.</h1>
 
