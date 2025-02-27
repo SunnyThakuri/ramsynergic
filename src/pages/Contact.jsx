@@ -1,4 +1,3 @@
-
 import startlogo from "../assets/ContactUI/star_logo.png";
 import connectionlogo from "../assets/ContactUI/connection_logo.png";
 import navigationlogo from "../assets/ContactUI/Navigation_logo.png";
@@ -6,34 +5,30 @@ import heattlogo from "../assets/ContactUI/Heart_logo.png";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
-
-
-  
-
   return (
     <>
       <div className="all px-4 md:px-10 lg:px-[166.5px] pt-[140px]">
         <div className="location_map flex flex-col md:flex-row gap-10">
-          <div className="dubai_map w-full">
-            <iframe
+          {/*  <div className="dubai_map w-full">
+           <iframe
               className="rounded-[8px] w-full h-[290px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14442.26542447723!2d55.24788271704149!3d25.1841162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69fe2d7351ad%3A0x178d36fe63447735!2sSYNERGY%20CONSULTING!5e0!3m2!1sen!2snp!4v1719726664053!5m2!1sen!2snp"
             ></iframe>
             <h1 className="text-[22px] font-semibold font-Poppins text-center mt-[16px]">
               DUBAI
             </h1>
-          </div>
+          </div> */}
 
           <div className="hongkong_map w-full">
-          <iframe
-  className="rounded-[8px] w-full h-[290px] "
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1804.1272652602274!2d55.3185009!3d25.2620218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ccdd08ee543%3A0xebb13c29ccfefdd2!2sAl%20Dana%20Centre!5e0!3m2!1sen!2snp!4v1740376238065!5m2!1sen!2snp"
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+            <iframe
+              className="rounded-[8px] w-full h-[290px] "
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1804.1272652602274!2d55.3185009!3d25.2620218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ccdd08ee543%3A0xebb13c29ccfefdd2!2sAl%20Dana%20Centre!5e0!3m2!1sen!2snp!4v1740376238065!5m2!1sen!2snp"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
             <h1 className="text-[22px] font-semibold font-Poppins text-center mt-[16px]">
-             GLOBAL CONNECT,DUBAI
+              GLOBAL CONNECT,DUBAI
             </h1>
           </div>
         </div>
@@ -50,7 +45,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="right_side w-full lg:w-[674px]">
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
       </div>
