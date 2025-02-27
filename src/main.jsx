@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  
     <App />
-  </BrowserRouter>
+  
 )

@@ -1,10 +1,14 @@
+import { HashRouter } from "react-router-dom"
 import Layout from "./Layout/Layout"
 
 
 const App = () => {
   return (
     <>
-      <Layout />
+    <HashRouter>
+       <Layout />
+    </HashRouter>
+     
     </>
   )
 }

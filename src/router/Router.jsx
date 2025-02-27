@@ -14,14 +14,13 @@ import Canada from "../components/Countries/Canada/Canada"
 import BlogIndividual from "../components/BlogIndividual/BlogIndividual"
 import ScrollToTop from "./ScrollToTop"
 import Country from "../components/Countries/Country"
-
+import { HashRouter } from "react-router-dom"
 const Router = () => {
   return (
     <>
-      <ScrollToTop>
-        <Routes>
+    <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/Home" index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/hungary" element={<Hungary />} />
@@ -36,8 +35,8 @@ const Router = () => {
           <Route path="/termsAndCondition" element={<TermsAndCondition />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Routes >
-      </ScrollToTop>
-
+   
+      
     </>
   )
 }
