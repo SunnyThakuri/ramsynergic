@@ -35,7 +35,7 @@ const ContactUI = () => {
               className="text-white border-[1px] border-[#F7F7F7] rounded-[8px] px-3 py-2 flex">
                 Contact Us
                 <p className="w-[12px] h-[1px] mr-3 ml-3">
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <i className="fa-solid fa-arrow-right"></i>
                 </p>
               </button>
             </div>
@@ -47,7 +47,7 @@ const ContactUI = () => {
             className="text-white border-[1px] border-[#F7F7F7] rounded-[8px] px-3 py-2 flex">
               Contact Us
               <p className="w-[12px] h-[1px] mr-3 ml-3">
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </p>
             </button>
           </div>

@@ -96,12 +96,16 @@ const Header = () => {
 
             <div className="dropdown  relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
               <h1 className="group"
-              
+              onClick={(e)=>{
+                e.stopPropagation()
+                setActive(!active)}}
               >
                 Countries{" "}
                 <i className="fa-solid fa-chevron-down ml-2 text-[12px]"></i>
               </h1>
-              <div className="dropdown-content py-5 text-[12px] font-Poppins absolute bg-white shadow-md">
+              <div
+               onClick={()=> setActive(!active)}
+              className={`dropdown-content  py-5 text-[12px] font-Poppins absolute bg-white shadow-md ${active?"block":""} `}>
                 <NavLink to="/country/Hungary">
                   <h1 className="border-b pb-2 text-center border-b-[#E8E8E8]">
                     Hungary
