@@ -18,7 +18,8 @@ import { HashRouter } from "react-router-dom"
 const Router = () => {
   return (
     <>
-    <Routes>
+    <ScrollToTop>
+      <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" index element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,6 +36,8 @@ const Router = () => {
           <Route path="/termsAndCondition" element={<TermsAndCondition />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Routes >
+    </ScrollToTop>
+    
    
       
     </>
