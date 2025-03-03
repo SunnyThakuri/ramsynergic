@@ -1,13 +1,14 @@
-import { HashRouter } from "react-router-dom"
+import { BrowserRouter, HashRouter } from "react-router-dom"
 import Layout from "./Layout/Layout"
 
 
 const App = () => {
   return (
     <>
-    <HashRouter>
-       <Layout />
-    </HashRouter>
+    <BrowserRouter>
+     <Layout />
+    </BrowserRouter>
+   
      
     </>
   )

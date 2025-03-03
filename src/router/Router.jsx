@@ -14,7 +14,6 @@ import Canada from "../components/Countries/Canada/Canada"
 import BlogIndividual from "../components/BlogIndividual/BlogIndividual"
 import ScrollToTop from "./ScrollToTop"
 import Country from "../components/Countries/Country"
-import { HashRouter } from "react-router-dom"
 const Router = () => {
   return (
     <>
