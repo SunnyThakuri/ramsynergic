@@ -34,11 +34,28 @@ function ContactForm() {
     message:"",
     privacyPolicy:""
   }
-  
+  const validation=(values)=> {
+    const errors={}
+    if(!values.emailAddress){
+      errors.emailAddress='Required'
+    }else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.emailAddress)){
+      errors.emailAddress='Invalid email address'
+    }
+    if(!/^[0-9]/i.test(values.contactNumber)){
+      errors.contactNumber='Must be a number'
+    }else if(values.contactNumber.length !==10){
+      errors.contactNumber='Phone number should be of 10 digit'
+    }
+    if(!values.purpose){
+      errors.purpose="Required 1"
+    }
+    return errors
+  }
   return (
     <div>
       <Formik
       initialValues={initialValue}
+      validate={validation}
       onSubmit={async(values,{setSubmitting,resetForm})=> {
         setTimeout(()=> {
           setSubmitting(false)
@@ -77,9 +94,9 @@ function ContactForm() {
       >
         {
           ({values,
-           
+           touched,
             handleChange,
-      
+            errors,
             handleSubmit,
             isSubmitting
           })=> (
@@ -113,6 +130,8 @@ function ContactForm() {
               required
               className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
+
+           <span className="text-red-700" > {errors.emailAddress && touched.emailAddress && errors.emailAddress}</span>
           </div>
         </div>
 
@@ -132,6 +151,7 @@ function ContactForm() {
               required
               className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
+            <span className="text-red-700">{errors.contactNumber && touched.contactNumber && errors.contactNumber}</span>
           </div>
           <div className="number flex flex-col flex-1">
             <label
@@ -153,7 +173,7 @@ function ContactForm() {
         <div className="flex flex-col gap-5 flex-1">
           <div
          
-          className=" border bg-white w-full  border-gray-300 font-semibold text-[#333] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 "
+          className={` border bg-white w-full  border-gray-300 font-semibold text-[#333] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.purpose?"border-red-700":""}`}
           >
             <label 
             className="block  w-full "
@@ -170,7 +190,7 @@ function ContactForm() {
             {" "}
             <option
            className="text-xs md:text-lg"
-            value="" disabled>
+            value="" >
               Select Purpose
             </option>
          <option  className="text-xs md:text-lg" value="B2B">B2B Collaboration</option>
@@ -179,9 +199,11 @@ function ContactForm() {
             <option  className="text-xs md:text-lg" value="Student">Student Visa</option>
             <option  className="text-xs md:text-lg" value="Job">Job Search</option> 
           </select>
-          
+          <span className="text-red-700" >{errors.purpose && errors.purpose } </span>
           </label>
+         
           </div>
+          
           {values.purpose && values.purpose == "B2B" && (
             <div>
               <div className="flex flex-col flex-1 gap-1">
@@ -257,7 +279,7 @@ function ContactForm() {
                             className="p-2 max-w-[250px] border  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
                           >
                             <option className="text-xs md:text-lg" value="" disabled >
-                              European Country
+                              Select Country
                             </option>
                             <option className="text-xs md:text-lg" value="Hungary">Hungary</option>
                             <option className="text-xs md:text-lg" value="Malta">Malta</option>
@@ -295,7 +317,7 @@ function ContactForm() {
                             className="p-2 max-w-[250px] border  rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none border-gray-300 font-semibold text-[#333]"
                           >
                             <option className="text-xs w-fit md:text-lg" value="" disabled >
-                              GCC Country
+                              Select Country
                             </option>
                             <option className="text-xs w-fit md:text-lg" value="UAE">UAE</option>
                             <option className="text-xs w-fit md:text-lg" value="Quatar">Quatar</option>
