@@ -22,7 +22,7 @@ const About = () => {
       <OurVision/>
       <MidAbout/>
       <BestVisaConsultant />
-      <TeamSlider />
+     {/*  <TeamSlider /> */}
       <AboutOpportunities />
       <ContactUI />
     </>

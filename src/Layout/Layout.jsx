@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import Router from "../router/Router"
@@ -10,7 +10,9 @@ const Layout = () => {
       className='font-Poppins'
       >
          <Header /> 
-        <div>
+        <div
+        className='mt-16 '
+        >
           <Router />
         </div>
         <Footer />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import axios from 'axios'
 
 function FaqCustom() {
     const[isSuccess,setIssuccess]= useState(false)
@@ -14,15 +14,19 @@ function FaqCustom() {
             return({...prev,[name]:event.target.value})
         })
     }
-    const handleSubmit=(event)=> {
+    const handleSubmit=async(event)=> {
         event.preventDefault()
-        
-        setFormdata({faq:"",
+        const res= await axios.post("http://localhost:5000/service/form",formdata)
+        console.log(res)
+        if(res.status >= 200 && res.status<300){
+          setFormdata({faq:"",
             name:"",
             email:"",
             phone:""
         })
         setIssuccess(true)
+        }
+        
     }
     useEffect(()=> {
         setTimeout(()=> {
@@ -92,8 +96,9 @@ function FaqCustom() {
         />
         <input
         placeholder="Contact Number"
-        type="number" name="phone"
+        type="tel" name="phone"
         className=" w-full text-black p-2 outline-none rounded-md"
+        pattern="^[0-9+/-/s()]*$"
         value={formdata.phone}
         onChange={handleChange}
         required

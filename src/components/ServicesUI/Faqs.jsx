@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import faqImg1 from "../../assets/ServiceUI/faqImg1.png";
 import faqImg2 from "../../assets/ServiceUI/faqImg2.png";
 import FAQItem from "./FAQItem";
@@ -6,33 +7,327 @@ const Faqs = () => {
   const faqs = [
     {
       question: "What are the visa services you provide?",
-      answer:
-        "Admission requirements vary by university and progra We specialize in work visa, student visa and visit visa.",
+      answer: "We specialize in work visa, student visa and visit visa.",
     },
     {
       question: "What are the countries available for work permit?",
-      answer:(
+      answer: (
         <>
-        We have various countries available for work permit including Hungary, Croatia, Romania, Albania, Malta, France, Norway, Denmark, Slovakia. For latest updates you can contact us directly or also check here for vacancies 
-        <a href="/country/hungary"
-        className="text-red-300 underline px-2"
-        >More info.</a>
+          <>
+            <span>
+              <span>
+                {" "}
+                We have various countries available for work permits, including
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Hungary"
+                  className="text-red-300 underline px-1  "
+                >
+                  Hungary
+                </Link>
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Croatia"
+                  className="text-red-300 underline px-1 "
+                >
+                  Croatia
+                </Link>
+                ,
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Romania"
+                  className="text-red-300 underline px-1 "
+                >
+                  Romania
+                </Link>
+                ,
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Albania"
+                  className="text-red-300 underline px-1 "
+                >
+                  Albania
+                </Link>
+                ,
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Malta"
+                  className="text-red-300 underline px-1 "
+                >
+                  Malta
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/France"
+                  className="text-red-300 underline px-1 "
+                >
+                  France
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Norway"
+                  className="text-red-300 underline px-1 "
+                >
+                  Norway
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Denmark"
+                  className="text-red-300 underline px-1 "
+                >
+                  Denmark
+                </Link>
+                ,
+              </span>
+              <span>
+                {" "}
+                <Link
+                  to="/country/Slovakia"
+                  className="text-red-300 underline px-1 pr-2 "
+                >
+                  Slovakia.
+                </Link>
+              </span>
+            </span>
+
+            <span>
+              <span className="">
+                {" "}
+                We also offer work opportunities in **GCC countries**, including
+              </span>
+              <span>
+                <Link
+                  to="/country/uae"
+                  className="text-blue-500 underline px-1 "
+                >
+                  UAE
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                <Link
+                  to="/country/qatar"
+                  className="text-blue-500 underline px-1 "
+                >
+                  Qatar
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                <Link
+                  to="/country/bahrain"
+                  className="text-blue-500 underline px-1 "
+                >
+                  Bahrain
+                </Link>
+                ,{" "}
+              </span>
+              <span>
+                <Link
+                  to="/country/saudi-arabia"
+                  className="text-blue-500 underline px-1 "
+                >
+                  Saudi Arabia
+                </Link>
+                ,
+              </span>
+              <span>
+                <Link
+                  to="/country/kuwait"
+                  className="text-blue-500 underline px-1 "
+                >
+                  Kuwait
+                </Link>
+                .
+              </span>
+            </span>
+
+            <span>
+              For the latest updates, you can contact us directly or check{" "}
+              <span>
+                <Link to="/contact" className="text-blue-500 underline">
+                  here{" "}
+                </Link>
+              </span>{" "}
+              for vacancies.
+            </span>
+          </>
         </>
-      )
+      ),
     },
     {
       question: "What are the documents required?",
-      answer:(
+      answer: (
         <>
-         It depends on which visa you are going to apply for. But for almost all kinds of visa services that we provide, you need to send us your cv, passport & residence card. And other documents as per the visa category which you can check from here
-         <a href="/country/hungary"
-        className="text-red-300 underline px-2"
-        >More info</a>
+          <span>
+            The documents required depend on the type of visa you are applying
+            for. However, for most visa services we offer, you will need to
+            provide your CV, passport, and residence card, along with any
+            additional documents specific to your visa category. <br /> To check
+            the detailed requirements for your chosen country, select from the
+            list below:
+          </span>
+          <span>
+            <span> <br /> European Countries:</span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Hungary"
+                className="text-red-300 underline px-1  "
+              >
+                Hungary
+              </Link>
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Croatia"
+                className="text-red-300 underline px-1 "
+              >
+                Croatia
+              </Link>
+              ,
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Romania"
+                className="text-red-300 underline px-1 "
+              >
+                Romania
+              </Link>
+              ,
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Albania"
+                className="text-red-300 underline px-1 "
+              >
+                Albania
+              </Link>
+              ,
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Malta"
+                className="text-red-300 underline px-1 "
+              >
+                Malta
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/France"
+                className="text-red-300 underline px-1 "
+              >
+                France
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Norway"
+                className="text-red-300 underline px-1 "
+              >
+                Norway
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Denmark"
+                className="text-red-300 underline px-1 "
+              >
+                Denmark
+              </Link>
+              ,
+            </span>
+            <span>
+              {" "}
+              <Link
+                to="/country/Slovakia"
+                className="text-red-300 underline px-1 pr-2 "
+              >
+                Slovakia.
+              </Link>
+            </span>
+          </span>
+
+          <span>
+            <span className=""> <br /> GCC Countries:</span>
+            <span>
+              <Link to="/country/uae" className="text-blue-500 underline px-1 ">
+                UAE
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              <Link
+                to="/country/qatar"
+                className="text-blue-500 underline px-1 "
+              >
+                Qatar
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              <Link
+                to="/country/bahrain"
+                className="text-blue-500 underline px-1 "
+              >
+                Bahrain
+              </Link>
+              ,{" "}
+            </span>
+            <span>
+              <Link
+                to="/country/saudi-arabia"
+                className="text-blue-500 underline px-1 "
+              >
+                Saudi Arabia
+              </Link>
+              ,
+            </span>
+            <span>
+              <Link
+                to="/country/kuwait"
+                className="text-blue-500 underline px-1 "
+              >
+                Kuwait
+              </Link>
+              .
+            </span>
+          </span>
         </>
-      )
-         },
+      ),
+    },
     {
-      question: "Is there a refund policy?",
+      question: "Is there Link refund policy?",
       answer:
         " Yes, of course we give you the refund also. Depends on the program you have applied for.",
     },

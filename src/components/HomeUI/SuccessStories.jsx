@@ -13,7 +13,7 @@ const CustomSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="successStories hidden md:block forward-arrow  right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="successStories hidden md:block forward-arrow  right-12 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="rotate-180 relative top-1.5 right-3.5 sm:text-[12px] text-[10px] text-white  ">
@@ -27,7 +27,7 @@ const CustomSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="successStories hidden md:block backward-arrow right-12 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="successStories hidden md:block backward-arrow right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="text-[#00254F] relative top-2.5 left-3.5 sm:text-[12px] text-[10px] ">
