@@ -9,7 +9,7 @@ const Croatia = ({country}) => {
   return (
     <>
       <div className="all">
-        <div className="img xl:pt-[146px] lg:pt-[140px] sm:pt-[100px] pt-[80px] 2xl:mx-[91px] xl:mx-[95px] lg:mx-[70px] md:mx-[50px] mx-[10px]">
+        <div className="img  2xl:mx-[91px] xl:mx-[95px] lg:mx-[70px] md:mx-[50px] mx-[10px]">
 
           <div className="absolute xl:pt-[104px] lg:pt-[80px] sm:pt-[50px] pt-[20px] xl:ml-[85px] lg:ml-[60px] sm:ml-[40px] ml-[20px]">
             <h1 className='text-white  lg:text-[32px] sm:text-[22px]  text-[16px] font-Poppins font-semibold ' >{country}</h1>

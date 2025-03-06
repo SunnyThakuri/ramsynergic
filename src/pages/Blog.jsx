@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom'
 const Blog = () => {
   return (
     <>
-      <div className="allItems px-4 md:px-10 lg:px-[166.5px] pt-[172px]">
+      <div className="allItems px-4 md:px-10 lg:px-[166.5px] ">
 
         <div className="Hero_Section flex flex-col lg:flex-row gap-10">
           <div className="left-side h-auto lg:h-[544px]">
