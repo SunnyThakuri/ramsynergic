@@ -9,7 +9,7 @@ const Contact = () => {
   const redirect=useNavigate()
   return (
     <>
-      <div className="all px-4 md:px-10 lg:px-[166.5px] pt-[140px]">
+      <div className="all px-4 md:px-10 lg:px-[166.5px] pt-12">
         <div className="location_map flex flex-col md:flex-row gap-10">
           {/*  <div className="dubai_map w-full">
            <iframe

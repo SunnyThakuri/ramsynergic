@@ -23,7 +23,7 @@ const Immigration = () => {
           </div>
         <div>
          <img
-         src="https://img.freepik.com/free-photo/colleagues-working-project-discussing-details_114579-2817.jpg?t=st=1740384323~exp=1740387923~hmac=528e780c642db523be5bb66795a74907ace1677f4a15425e30864da99bbd530e&w=1380"
+         src="/aboutUs/Workforce.jpg"
          alt=""
          className="w-full h-full object-cover"/>
         </div>
