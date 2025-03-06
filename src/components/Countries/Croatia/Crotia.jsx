@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeroImg from "../../../assets/HungaryUI/HeroImg.png"
 import subheadingImg from "../../../assets/HungaryUI/subheadingImg.png"
 import subheadingImg2 from "../../../assets/HungaryUI/subheadingImg2.png"

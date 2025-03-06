@@ -1,4 +1,4 @@
-import React from 'react'
+
 import passportImg from "../assets/BlogUI/passport.png"
 import heroImg1 from "../assets/BlogUI/BlogHeroImg1.png"
 import heroImg2 from "../assets/BlogUI/BlogHeroImg2.png"
