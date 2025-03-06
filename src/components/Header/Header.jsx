@@ -19,6 +19,7 @@ const Header = () => {
   };
   const {pathname}= useLocation()
   const path=pathname.slice(1)
+  console.log("search param-header",path.charAt(0).toUpperCase()+path.slice(1))
   const handleClick = (text) => {
     setClickedText(text);
   };
