@@ -1,6 +1,6 @@
 
 
-function JobForm() {
+function JobForm({handleChange,values}) {
   return (
     <div>
       <div
@@ -11,8 +11,10 @@ function JobForm() {
       >
         <label
         className="font-semibold text-[#333]"
-        htmlFor="destination">Destination Country</label>
-        <select name="destination" id="destination"
+        htmlFor="jobDestination">Destination Country</label>
+        <select name="jobDestination" id="jobDestination"
+        onChange={handleChange}
+        value={values.jobDestination}
         className="p-2 rounded-md focus:outline-none border border-gray-300 focus:ring-2 focus:ring-blue-400"
         >
 
@@ -29,8 +31,11 @@ function JobForm() {
       >
         <label
         className="font-semibold text-[#333]"
-        htmlFor="profession">Latest Profession</label>
+        htmlFor="jobProfession">Latest Profession</label>
         <input
+        name="jobProfession"
+        onChange={handleChange}
+        value={values.jobProfession}
          className="p-2 rounded-md focus:outline-none border border-gray-300 focus:ring-2 focus:ring-blue-400"
         type="text" />
       </div>
@@ -39,8 +44,11 @@ function JobForm() {
       >
         <label
         className="font-semibold text-[#333]"
-        htmlFor="profession">Visa Status</label>
+        htmlFor="jobVisaStatus">Visa Status</label>
         <input
+        name="jobVisaStatus"
+        onChange={handleChange}
+        value={values.jobVisaStatus}
          className="p-2 rounded-md focus:outline-none border border-gray-300 focus:ring-2 focus:ring-blue-400"
         type="text" />
       </div>

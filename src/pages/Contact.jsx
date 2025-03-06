@@ -3,8 +3,10 @@ import connectionlogo from "../assets/ContactUI/connection_logo.png";
 import navigationlogo from "../assets/ContactUI/Navigation_logo.png";
 import heattlogo from "../assets/ContactUI/Heart_logo.png";
 import ContactForm from "./ContactForm";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const redirect=useNavigate()
   return (
     <>
       <div className="all px-4 md:px-10 lg:px-[166.5px] pt-[140px]">
@@ -19,10 +21,10 @@ const Contact = () => {
             </h1>
           </div> */}
 
-          <div className="hongkong_map w-full">
+          <div className="hongkong_map  h-[290px] w-full">
             <iframe
-              className="rounded-[8px] w-full h-[290px] "
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1804.1272652602274!2d55.3185009!3d25.2620218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5ccdd08ee543%3A0xebb13c29ccfefdd2!2sAl%20Dana%20Centre!5e0!3m2!1sen!2snp!4v1740376238065!5m2!1sen!2snp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2517407034093!2d55.316730174082764!3d25.262115677669208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d004dffc1b9%3A0x899af2b1a57abb72!2sGlobal%20Connect!5e0!3m2!1sen!2snp!4v1741160707041!5m2!1sen!2snp"
+               className="rounded-[8px] w-full h-full "
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -64,7 +66,9 @@ const Contact = () => {
           </p>
 
           <div className="btn mt-[30px] md:mt-[70px]">
-            <button className="border-2 border-[#F7F7F7] text-[#F7F7F7] px-5 py-2 rounded-[8px]">
+            <button 
+            onClick={()=> redirect("/about")}
+            className="border-2 border-[#F7F7F7] text-[#F7F7F7] px-5 py-2 rounded-[8px]">
               More About Us
             </button>
           </div>

@@ -86,6 +86,7 @@ const OurServices = () => {
   }; */
   const [alignMode, setAlignMode] = useState("start");
   const[scrollE,setScrollE]=useState(false)
+  const [activeIndex,setActiveIndex]=useState(0)
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       dragFree: true,
@@ -96,7 +97,19 @@ const OurServices = () => {
     },
     [Autoplay({ delay: 3000 ,stopOnInteraction:!scrollE?true:false})]
   );
-
+const onSelect=useCallback(()=> {
+  if(!emblaApi) return
+  setActiveIndex(emblaApi.selectedScrollSnap())
+},[emblaApi])
+useEffect(()=> {
+  if(!emblaApi )return
+  emblaApi.on("select",onSelect)
+  onSelect()
+  return ()=> {
+    emblaApi.off("select",onSelect)
+  }
+},[onSelect,emblaApi])
+console.log("embla-actiive",activeIndex)
   useEffect(() => {
     const handleResize = () => {
       setAlignMode(window.innerWidth < 480 ? "center" : "start");
@@ -160,7 +173,7 @@ useEffect(()=> {
                 >
                   <div className="w-[290px] h-[300px]">
                     <img
-                      className=" w-full h-full object-cover hover:scale-105 transition-transform duration-150"
+                      className={`w-full h-full object-cover hover:scale-105 transition-transform duration-150 ease-in-out delay-700  ${activeIndex==index?"scale-105 md:scale-100 opacity-100":" opacity-50 md:opacity-100"}  `}
                       src={item.img}
                     />
                   </div>

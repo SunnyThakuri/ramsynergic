@@ -1,4 +1,6 @@
+import scrollbarHide from "tailwind-scrollbar-hide"
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -19,6 +21,6 @@ export default {
       'spin-circle': 'spinCircle 5s linear infinite',
     },
   },
-  plugins: [],
+  plugins: [scrollbarHide],
 }
 

@@ -10,7 +10,7 @@ function OurVision() {
 
         <div className="flex  flex-col gap-8 mt-8">
         <div className="flex flex-col md:flex-row md:gap-12  gap-4">
-          <p className="text-white max-w-1/2 md:text-lg w-full md:w-1/2 text-justify ">
+          <p className="text-white max-w-1/2 tracking-tight md:text-lg w-full md:w-1/2 text-justify ">
             {`Our vision is to become the employers' preferred recruitment agency
             of choice, distinguished by the quality and extent of our services.
             We strive to provide ethical and professional solutions that
@@ -23,11 +23,11 @@ function OurVision() {
           </p>
         
           <div
-            className="max-w-1/2  w-full md:w-1/2 max-h-[320px] lg:max-h-[300px]"
+            className="max-w-1/2  w-full md:w-1/2 max-h-[330px] lg:max-h-[300px]"
             >
                 <img
                 className="w-full h-full object-cover object-center rounded-lg"
-                src="/aboutUs/vison.jpg" />
+                src="/aboutUs/vison1.jpg" />
             </div>
         </div>
         <div className="">
@@ -35,9 +35,9 @@ function OurVision() {
             <div className="max-w-1/2 w-full md:w-1/2 max-h-[330px] hidden md:block lg:max-h-[300px]">
                 <img
                 className="w-full h-full rounded-lg object-top  object-cover"
-                src="/aboutUs/vison2.avif" />
+                src="/aboutUs/vison3.jpg" />
             </div>
-          <p className="max-w-1/2 md:text-lg w-full md:w-1/2 text-justify text-white">
+          <p className="max-w-1/2 md:text-lg w-full md:w-1/2 text-justify text-white h-fit  sm:mt-16 md:mt-0">
             {`To become the employers' preferred Recruitment Agency of choice
             based on the extent and quality of our service. We also endeavor to
             provide exceptional recruitment solutions that meet the diverse
@@ -47,7 +47,7 @@ function OurVision() {
             <div className="max-w-1/2   h-fit md:hidden lg:max-h-[200px]">
                 <img
                 className="w-full max-h-[330px] rounded-lg  object-cover object-top"
-                src="/aboutUs/vison2.avif" />
+                src="/aboutUs/vison3.jpg" />
             </div>
         </div>
         </div>

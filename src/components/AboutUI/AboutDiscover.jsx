@@ -5,9 +5,9 @@ const AboutDiscover = () => {
     <>
       <div className="dicover 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px] mt-[124px] bg-[#00254F] font-Poppins">
         <h1 className=" md:text-[20px] text-white  md:font-semibold md:text-center xl:px-[260px] lg:px-[150px] md:px-[50px] sm:px-[20px] pt-14  md:pt-[120px]">
-        We have our extensive network across various nations who
-              are specialize in crafting solutions for aspirants seeking second
-              citizenship or residences in coveted locales.
+          With our strong global network, we connect skilled professionals with
+          top employers worldwide, ensuring reliable job placements and a smooth
+          recruitment process.
         </h1>
 
         <div className="main pt-16 pb-[100px] lg:flex lg:justify-between ">
@@ -34,59 +34,75 @@ const AboutDiscover = () => {
           </div>
 
           <div className="flex items-center justify-center  ">
-            
-
             <div className="2xl:w-[700px] grid md:grid-cols-3 gap-16 md:gap-24  md:justify-between lg:gap-1 items-center xl:w-[600px] lg:w-[500px] w-full lg:mt-0 mt-[80px]">
               <div className="logo1and2 flex md:flex-col gap-16 md:gap-52 lg:gap-64 justify-between px-6  ">
                 <div className=" ">
                   <div className=" flex items-center justify-center">
-                    <img className="items-center w-16 bg-green-700 rounded-2xl " src="/aboutUs/quality-assurance.png" alt="" />
+                    <img
+                      className="items-center w-16 bg-green-700 rounded-2xl "
+                      src="/aboutUs/quality-assurance.png"
+                      alt=""
+                    />
                   </div>
 
                   <h1 className="text-white mt-3 md:text-sm lg:text-md text-center ">
-                  Quality <br />
-                   Assurance
+                    Quality <br />
+                    Assurance
                   </h1>
                 </div>
 
                 {/* third */}
                 <div className="  ">
                   <div className="image flex justify-center">
-                    <img className="items-center w-16 bg-white rounded-2xl p-2  " src="/aboutUs/running.png" alt="" />
+                    <img
+                      className="items-center w-16 bg-white rounded-2xl p-2  "
+                      src="/aboutUs/running.png"
+                      alt=""
+                    />
                   </div>
                   <h1 className="text-white mt-3 md:text-sm lg:text-md  text-center ">
-                  Swift <br /> Deployment
+                    Swift <br /> Deployment
                   </h1>
                 </div>
-
-                
               </div>
               <div className="flex flex-col items-center justify-center">
-                  <div className="image flex justify-center">
-                    <img className="items-center w-16 bg-[#FFD700] rounded-2xl p-1 " src="/aboutUs/90-days.png" alt="" />
-                  </div>
-                  <h1 className="text-white mt-3 text-center md:text-sm lg:text-md w-[200px]">
-                  90-Day Medical and Performance Guarantee with Replacement
-                  </h1>
+                <div className="image flex justify-center">
+                  <img
+                    className="items-center w-16 bg-[#FFD700] rounded-2xl p-1 "
+                    src="/aboutUs/90-days.png"
+                    alt=""
+                  />
                 </div>
-              
+                <h1 className="text-white mt-3 text-center md:text-sm lg:text-md w-[200px]">
+                  90-Day Medical and Performance Guarantee with Replacement
+                </h1>
+              </div>
+
               <div className=" flex md:flex-col gap-16 md:gap-52 lg:gap-64 justify-between  ">
                 {/* second */}
-                
+
                 <div className=" flex flex-col items-center  shadow-lg   md:text-sm ">
                   <div className="image flex  items-center justify-center">
-                    <img className="items-center w-16 bg-white text-white object-cover rounded-2xl p-1" src="/aboutUs/visa.jpg" alt="" />
+                    <img
+                      className="items-center w-16 bg-white text-white object-cover rounded-2xl p-1"
+                      src="/aboutUs/visa.jpg"
+                      alt=""
+                    />
                   </div>
                   <h1 className="text-white mt-3 text-center w-[150px] ">
-                  No Dropouts After Visa Issuance
+                    No Dropouts After Visa Issuance
                   </h1>
                 </div>
                 <div className="">
                   <div className="image flex justify-center">
-                    <img className="items-center w-16 bg-white rounded-2xl p-2" src="/aboutUs/cost.png" alt="" />
+                    <img
+                      className="items-center w-16 bg-white rounded-2xl p-2"
+                      src="/aboutUs/cost.png"
+                      alt=""
+                    />
                   </div>
                   <h1 className="text-white mt-3 md:text-sm lg:text-md  text-center">
-                  Transparent Pricing
+                    Transparent Pricing
                   </h1>
                 </div>
               </div>

@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom";
-import { useRef, useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import {  useState, useEffect, useCallback } from "react";
 import navlogo from "../../assets/Header/Global Connect Logo.png";
 import "../../style/Header.css";
+import DropDownHeader from "./DropDownHeader";
 
 const Header = () => {
-  const menuRef = useRef(null);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const[mobNav,setMobNav]= useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const[lastScrollY,setLastScrollY]=useState(0)
   const [clickedText, setClickedText] = useState("Home");
   const [active,setActive]=useState(false)
-  const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
-
   const getTextClasses = (text) => {
     const baseClass = "cursor-pointer";
     const colorClass =
@@ -17,30 +17,43 @@ const Header = () => {
     const dotClass = clickedText === text ? "text-with-dot" : "";
     return `${baseClass} ${colorClass} ${dotClass}`;
   };
-
+  const {pathname}= useLocation()
+  const path=pathname.slice(1)
+  console.log("search param-header",path.charAt(0).toUpperCase()+path.slice(1))
   const handleClick = (text) => {
     setClickedText(text);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  useEffect(()=> {
+    setClickedText(path.charAt(0).toUpperCase()+path.slice(1))
+  },[path])
+  
+  useEffect(()=> {
+    if(!mobNav){
+      setActive(false)
+    }
+  },[mobNav])
+const handleScroll=useCallback(()=> {
+  if(!mobNav){
+    const currentScrollY=window.scrollY
+  if(currentScrollY > 50 && currentScrollY > lastScrollY ){
+    setIsVisible(false)
+  }else{
+    setIsVisible(true)
+  }
+  setLastScrollY(currentScrollY)
+  }
+},[lastScrollY,mobNav])
+  useEffect(()=>{
+   
+    window.addEventListener("scroll",handleScroll)
+    return ()=> window.removeEventListener("scroll",handleScroll)
+  },[handleScroll])
   return (
     <>
-      <div className={`sticky top-0 py-3  w-full md:py-0 shadow-lg bg-[#F7F7F7] z-[20000] 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[80px] px-[20px] flex justify-between`}>
-        <div className="left_side">
+      <div className={`fixed  top-0 left-0 py-3  w-full md:py-0 shadow-lg bg-[#F7F7F7] z-[20000] 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[80px] px-[20px] flex justify-between transition-transform duration-300 ${isVisible?"translate-y-0":"-translate-y-full"}`}>
+
+        
+        <div className="left_side  ">
           <div onClick={() => handleClick("Home")}>
             <NavLink to="/">
               <div className="nav_logo flex ">
@@ -52,13 +65,17 @@ const Header = () => {
         </div>
 
         <div
-          ref={menuRef}
-          onClick={toggleMenu}
-          className="Navigation  md:relative absolute right-0 md:w-auto w-[80%] md:h-auto"
+         
+          
+          className={`  top-0 md:relative absolute right-0  md:w-auto    md:h-auto`}
         >
-          <div className="right_side  text-[#828282] font-Poppins md:mt-[33px] md:space-x-[32px] md:flex md:bg-inherit bg-white h-screen md:h-auto pb-[10px]">
-            <div className="cross_mark cursor-pointer md:hidden md:border-none border-b-[1px] border-gray-400 pb-3 md:pl-0 pl-5 flex justify-end pr-10 pt-5 ">
-              <i className="fa-solid fa-xmark text-[20px] text-black"></i>
+          <div className={`right_side   text-[#828282] font-Poppins md:mt-[33px] md:space-x-[32px] md:flex md:opacity-100 md:w-full md:bg-inherit bg-white h-screen md:h-auto pb-[10px] transition-all delay-100 duration-700 overflow-x-hidden md:overflow-visible ease-in-out transition-discrete ${mobNav?" w-[250px]  md:w-[400px]  opacity-100  ":"w-0 opacity-0"}`}>
+            <div
+            
+            className="cross_mark cursor-pointer md:hidden md:border-none border-b-[1px] border-gray-400 pb-3 md:pl-0 pl-5 flex justify-end pr-6 md:pr-20 pt-4 md:pt-5 ">
+              <i
+              onClick={()=> setMobNav(!mobNav)}
+              className="fa-solid fa-xmark text-[20px] text-black"></i>
             </div>
 
             <NavLink to="/">
@@ -66,7 +83,10 @@ const Header = () => {
                 className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:mt-auto mt-5 ${getTextClasses(
                   "Home"
                 )}`}
-                onClick={() => handleClick("Home")}
+                onClick={() => {handleClick("Home")
+
+                  setMobNav(!mobNav)
+                }}
               >
                 Home
               </h1>
@@ -77,7 +97,9 @@ const Header = () => {
                 className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                   "About"
                 )}`}
-                onClick={() => handleClick("About")}
+                onClick={() =>{ handleClick("About")
+                  setMobNav(!mobNav)
+                }}
               >
                 About
               </h1>
@@ -88,53 +110,40 @@ const Header = () => {
                 className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                   "Services"
                 )}`}
-                onClick={() => handleClick("Services")}
+                onClick={() => {handleClick("Services")
+                  setMobNav(!mobNav)
+                }}
               >
                 Services
               </h1>
             </NavLink>
 
-            <div className="dropdown  relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
-              <h1 className="group"
-              onClick={(e)=>{
-                e.stopPropagation()
+            <div className="dropdown   relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
+              <h1 className=" group"
+              onClick={()=>{
+               
                 setActive(!active)}}
               >
                 Countries{" "}
                 <i className="fa-solid fa-chevron-down ml-2 text-[12px]"></i>
               </h1>
               <div
-               onClick={()=> setActive(!active)}
-              className={`dropdown-content  py-5 text-[12px] font-Poppins absolute bg-white shadow-md ${active?"block":""} `}>
-                <NavLink to="/country/Hungary">
-                  <h1 className="border-b pb-2 text-center border-b-[#E8E8E8]">
-                    Hungary
-                  </h1>
-                </NavLink>
-                <NavLink to="/country/Australia">
-                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
-                    Australia
-                  </h1>
-                </NavLink>
-                <NavLink to="/country/Canada">
-                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
-                    Canada
-                  </h1>
-                </NavLink>
-                <NavLink to="country/Hungary">
-                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
-                    Hungary
-                  </h1>
-                </NavLink>
-                <NavLink to="country/Spain">
-                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
-                    Spain
-                  </h1>
-                </NavLink>
+              className={`dropdown-content bg-transparent transition-all duration-700 ease-in  py-5 text-[12px]  font-Poppins absolute  shadow-md ${active?"block md:hidden":"hidden"} `}
+              >
+              <div
+               className="bg-white rounded-xl py-4 -mt-2"
+               >
+                 <DropDownHeader
+                 mobNav={mobNav}
+                 setMobNav={setMobNav}
+                 />
+               </div>
               </div>
             </div>
 
-            <NavLink to="/blog">
+            <NavLink to="/blog"
+            onClick={()=> setMobNav(!mobNav)}
+            >
               <h1
                 className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                   "Blog"
@@ -145,7 +154,9 @@ const Header = () => {
               </h1>
             </NavLink>
 
-            <NavLink to="/contact">
+            <NavLink to="/contact"
+            onClick={()=> setMobNav(!mobNav)}
+            >
               <h1
                 className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                   "Contact"
@@ -159,10 +170,10 @@ const Header = () => {
         </div>
 
         <div
-          onClick={toggleMenu}
-          className="menu cursor-pointer self-center md:hidden md:pt-[33px] "
+          onClick={()=> setMobNav(!mobNav)}
+          className="menu  right-2 cursor-pointer self-center md:hidden md:pt-[33px] "
         >
-          <i className="fa-solid fa-bars text-[25px]"></i>
+          <i className="fa-solid  fa-bars text-[25px]"></i>
         </div>
       </div>
     </>
@@ -170,3 +181,38 @@ const Header = () => {
 };
 
 export default Header;
+/* <NavLink to="/country/Hungary"
+                onClick={()=> setMobNav(!mobNav)}
+                >
+                  <h1 className="border-b pb-2 text-center border-b-[#E8E8E8]">
+                    Hungary
+                  </h1>
+                </NavLink>
+                <NavLink to="/country/Australia"
+                onClick={()=> setMobNav(!mobNav)}
+                >
+                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
+                    Australia
+                  </h1>
+                </NavLink>
+                <NavLink to="/country/Canada"
+                onClick={()=> setMobNav(!mobNav)}
+                >
+                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
+                    Canada
+                  </h1>
+                </NavLink>
+                <NavLink to="country/Hungary"
+                onClick={()=> setMobNav(!mobNav)}
+                >
+                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
+                    Hungary
+                  </h1>
+                </NavLink>
+                <NavLink to="country/Spain"
+                onClick={()=> setMobNav(!mobNav)}
+                >
+                  <h1 className="border-b pt-3 pb-2 text-center border-b-[#E8E8E8]">
+                    Spain
+                  </h1>
+                </NavLink> */

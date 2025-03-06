@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../style/HeroSlider.css";
 import arrow from "../../assets/HomeUI/arrow.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,7 +72,7 @@ const HeroSlider = () => {
       },
     ],
   };
-
+const redirect=useNavigate()
   return (
     <>
       <div className="relative">
@@ -97,7 +98,9 @@ const HeroSlider = () => {
                 Get to Work With the Leading Recruitment Agency in UAE
               </p>
               <div className="btn pt-4 lg:pt-10">
-                <button className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
+                <button
+                onClick={()=> redirect("/contact")}
+                className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
                   Apply Now
                   <img
                     className="w-4 h-2 lg:w-[20px] lg:h-[10px] ml-2 lg:ml-3"
@@ -122,7 +125,9 @@ const HeroSlider = () => {
                 Get to Work With the Leading Recruitment Agency in UAE
               </p>
               <div className="btn pt-4 lg:pt-10">
-                <button className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
+                <button
+                 onClick={()=> redirect("/contact")}
+                className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
                   Apply Now
                   <img
                     className="w-4 h-2 lg:w-[20px] lg:h-[10px] ml-2 lg:ml-3"
@@ -147,7 +152,9 @@ const HeroSlider = () => {
                 Get to Work With the Leading Recruitment Agency in UAE
               </p>
               <div className="btn pt-4 lg:pt-10">
-                <button className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
+                <button
+                 onClick={()=> redirect("/contact")}
+                className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
                   Apply Now
                   <img
                     className="w-4 h-2 lg:w-[20px] lg:h-[10px] ml-2 lg:ml-3"

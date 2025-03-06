@@ -17,7 +17,7 @@ const FAQItem = ({ question, answer }) => {
         </span>
       </button>
       <div
-        className={`overflow-hidden transition-all duration-700 ease-in text-[#5F6D7E] ${isOpen ? 'max-h-screen px-[16px] pb-[12px]' : 'max-h-0'
+        className={`overflow-hidden text-wrap max-w-  transition-all duration-700 ease-in text-[#5F6D7E] ${isOpen ? 'max-h-screen px-[16px] pb-[12px]' : 'max-h-0'
           }`}
       >
         {isOpen && <div className="text-left">{answer}</div>}
