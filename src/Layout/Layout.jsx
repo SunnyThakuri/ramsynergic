@@ -11,7 +11,7 @@ const Layout = () => {
       >
          <Header /> 
         <div
-        className='mt-24 '
+        className='mt-14 md:mt-[75px]'
         >
           <Router />
         </div>
