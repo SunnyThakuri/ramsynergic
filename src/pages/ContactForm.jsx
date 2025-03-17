@@ -60,7 +60,7 @@ function ContactForm() {
         setTimeout(()=> {
           setSubmitting(false)
         },400)
-        const res=await axios.post("https://global-server-ten.vercel.app/form",{
+        const res=await axios.post("https://global-server-kappa.vercel.app/form",{
           fullName: values.fullName,
           emailAddress: values.emailAddress,
           contactNumber: values.contactNumber,

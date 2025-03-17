@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy:{
       '/form':{
-        target:'https://global-server-ten.vercel.app',
+        target:'https://global-server-kappa.vercel.app',
         changeOrigin: true,
         secure: false,
       }
