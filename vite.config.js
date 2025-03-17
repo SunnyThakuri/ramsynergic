@@ -5,7 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base:'./',
-  // server: {
-  //   historyApiFallback: true
-  // }
+  server: {
+    proxy:{
+      '/form':{
+        target:'https://global-server-ten.vercel.app',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
+  }
 })
