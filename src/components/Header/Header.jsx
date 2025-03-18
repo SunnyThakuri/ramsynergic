@@ -115,28 +115,24 @@ const handleScroll=useCallback(()=> {
                 </h1>
               </NavLink>
 
-              <div className="dropdown   relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3">
-                <h1 className=" group"
-                onClick={()=>{
-                
-                  setActive(!active)}}
+              <div className="dropdown relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-6 md:pb-0 pb-3">
+                <h1
+                  className="group"
+                  onClick={() => {
+                    setActive(!active);
+                  }}
                 >
-                  Countries{" "}
+                  Countries
                   <i className="fa-solid fa-chevron-down ml-2 text-[12px]"></i>
                 </h1>
-                <div
-                className={`dropdown-content bg-transparent transition-all duration-700 ease-in  py-5 text-[12px]  font-Poppins absolute  shadow-md ${active?"block md:hidden":"hidden"} `}
-                >
-                <div
-                className="bg-white rounded-xl py-4 -mt-2"
-                >
-                  <DropDownHeader
-                  mobNav={mobNav}
-                  setMobNav={setMobNav}
-                  />
-                </div>
-                </div>
+                {active && (
+                  <div className={`dropdown-content transition-all duration-700 ease-in text-[12px] font-Poppins absolute shadow-md bg-white rounded-xl py-4 `}
+                  >
+                    <DropDownHeader mobNav={mobNav} setMobNav={setMobNav} />
+                  </div>
+                )}
               </div>
+
 
               <NavLink to="/blog"
               onClick={()=> setMobNav(!mobNav)}
@@ -148,6 +144,19 @@ const handleScroll=useCallback(()=> {
                   onClick={() => handleClick("Blog")}
                 >
                   Blog
+                </h1>
+              </NavLink>
+
+              <NavLink to="/faq"
+              onClick={()=> setMobNav(!mobNav)}
+              >
+                <h1
+                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                    "FAQ"
+                  )}`}
+                  onClick={() => handleClick("FAQ")}
+                >
+                  FAQ
                 </h1>
               </NavLink>
 

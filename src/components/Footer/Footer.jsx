@@ -19,7 +19,7 @@ const Footer = () => {
                 alt=""
               />
             </div>
-            <h1 className="text--[#9B9B9B] text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center">
+            <h1 className=" text-[14px] sm:w-[225px] text-[#9B9B9B] pt-[32px] sm:text-left text-center">
               Global Connect Consulting Services in UAE
             </h1>
           </div>

@@ -43,24 +43,25 @@ function FaqCustom() {
         </div>
         <div className=" relative w-full px-4 md:px-20 lg:px-72 py-12 bg-[#00264F]  text-white">
         <form 
-          onSubmit={handleSubmit} className="flex flex-col gap-3 lg:gap-8">
-          <label htmlFor="faq" className="block text-xl w-full text-center "
-        >Ask me a question</label>
+          onSubmit={handleSubmit} 
+          className="flex flex-col gap-3 lg:gap-8">
+
+          <label htmlFor="faq" className="block text-xl w-full text-center ">Ask me a question</label>
           <textarea
-          name="faq" id="faq"
-          className=" w-full text-black px-2 py-1 outline-none rounded-md h-32"
-          value={formdata.faq}
-          placeholder="Drop your question here !!!"
-          onChange={handleChange}
-          required
-          rows={5}
-          minLength={5}
+            name="faq" id="faq"
+            className=" w-full text-black p-2.5 outline-none rounded-md "
+            value={formdata.faq}
+            placeholder="Drop your question here !!!"
+            onChange={handleChange}
+            required
+            rows={8}
+            minLength={5}
           />
           <div className="flex flex-col md:flex-row gap-4">
             <input
               placeholder="Full Name"
               type="text" 
-              className=" p-2 w-full text-black outline-none rounded-md"
+              className=" p-2.5 w-full text-black outline-none rounded-md"
               name="name"
               value={formdata.name}
               onChange={handleChange}
@@ -71,7 +72,7 @@ function FaqCustom() {
             <input
               placeholder="Email"
               type="email" name="email"
-              className=" w-full text-black p-2 outline-none rounded-md"
+              className=" w-full text-black p-2.5 outline-none rounded-md"
               value={formdata.email}
               onChange={handleChange}
               required
@@ -79,7 +80,7 @@ function FaqCustom() {
             <input
               placeholder="Contact Number"
               type="tel" name="phone"
-              className=" w-full text-black p-2 outline-none rounded-md"
+              className=" w-full text-black p-2.5 outline-none rounded-md"
               pattern="^[0-9+/-/s()]*$"
               value={formdata.phone}
               onChange={handleChange}
