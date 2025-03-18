@@ -2,7 +2,7 @@
 const FaqVideo = () =>{
     return(
         <div className="flex flex-col gap-12 items-center px-4">
-            <p className="text-3xl">How to use Zoom</p>
+            <p className="text-4xl font-medium text-[#00264F]">How to use Zoom</p>
             <div className="md:h-[478px] h-[210px] w-full md:w-[850px] rounded-2xl">
                 <iframe 
                     width="560" 
