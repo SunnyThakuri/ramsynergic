@@ -65,25 +65,45 @@ const Footer = () => {
             <h1 className="font-semibold">COUNTRIES</h1>
             <ul className="list-outside list-disc pl-5 pt-[12px]">
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Hungary</span>
+              </NavLink>
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Slovakia</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Croatia</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Bulgaria</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Albania</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Romania</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
                 <span className="text-[#CFCFCF]">Norway</span>
+              </NavLink>
+
               </li>
               <li className="text-[#007BFF]">
                 <span className="text-[#CFCFCF]">GCC</span>
@@ -133,31 +153,51 @@ const Footer = () => {
             <div className="countries  text-white">
               <h1 className="font-semibold">COUNTRIES</h1>
               <ul className="list-outside list-disc pl-5 pt-[12px]">
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Hungary</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Slovakia </span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Croatia</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Bulgaria</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Albania</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Romania</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">Norway</span>
-                </li>
-                <li className="text-[#007BFF]">
-                  <span className="text-[#CFCFCF]">GCC</span>
-                </li>
-              </ul>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Hungary</span>
+              </NavLink>
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Slovakia</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Croatia</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Bulgaria</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Albania</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Romania</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+              <NavLink to="/country/hungary">
+                <span className="text-[#CFCFCF]">Norway</span>
+              </NavLink>
+
+              </li>
+              <li className="text-[#007BFF]">
+                <span className="text-[#CFCFCF]">GCC</span>
+              </li>
+            </ul>
             </div>
           </div>
           {/* --------------------------------------------------- */}
