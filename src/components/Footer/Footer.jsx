@@ -49,6 +49,11 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li className="text-[#007BFF]">
+                  <NavLink to="/faq">
+                    <span className="text-[#CFCFCF]">FAQ</span>
+                  </NavLink>
+                </li>
+              <li className="text-[#007BFF]">
                 <NavLink to="/contact">
                   <span className="text-[#CFCFCF]">Contact</span>
                 </NavLink>
@@ -110,6 +115,11 @@ const Footer = () => {
                 <li className="text-[#007BFF]">
                   <NavLink to="/blog">
                     <span className="text-[#CFCFCF]">Blog</span>
+                  </NavLink>
+                </li>
+                <li className="text-[#007BFF]">
+                  <NavLink to="/faq">
+                    <span className="text-[#CFCFCF]">FAQ</span>
                   </NavLink>
                 </li>
                 <li className="text-[#007BFF]">
