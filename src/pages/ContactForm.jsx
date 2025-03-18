@@ -586,7 +586,8 @@ function ContactForm() {
           }
 
           try {
-            const res = await axios.post("http://localhost:5000/form", formData, {
+            const res = await axios.post("https://global-server-kappa.vercel.app/form", formData, {
+            // const res = await axios.post("http://localhost:5000/form", formData, {
               headers: {
                 'Content-Type': 'multipart/form-data', // Set the content type for file upload
               },

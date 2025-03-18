@@ -16,8 +16,8 @@ function FaqCustom() {
     }
     const handleSubmit=async(event)=> {
         event.preventDefault()
-        const res= await axios.post("http://localhost:5000/service/form",formdata)
-        // const res= await axios.post("https://global-server-kappa.vercel.app/service/form",formdata)
+        // const res= await axios.post("http://localhost:5000/service/form",formdata)
+        const res= await axios.post("https://global-server-kappa.vercel.app/service/form",formdata)
 
         console.log(res)
         if(res.status >= 200 && res.status<300){
