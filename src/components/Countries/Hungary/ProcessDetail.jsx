@@ -231,7 +231,6 @@ const ProcessDetail = () => {
         {/* --------------DEPLOYMENT--------------- */}
 
         <div className="md:flex justify-between mt-[56px] 2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px]">
-          4
           <div className="hidden md:block">
             <div className="right_side flex flex-col justify-center">
               <img className='xl:w-[428px] lg:w-[328px] md:w-[228px] h-[269px]' src={deplyomentImg} alt="" />
