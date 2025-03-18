@@ -14,6 +14,7 @@ import Canada from "../components/Countries/Canada/Canada"
 import BlogIndividual from "../components/BlogIndividual/BlogIndividual"
 import ScrollToTop from "./ScrollToTop"
 import Country from "../components/Countries/Country"
+import Faq from "../pages/Faq"
 const Router = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Router = () => {
       <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/hungary" element={<Hungary />} />
