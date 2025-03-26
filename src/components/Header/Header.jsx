@@ -55,7 +55,7 @@ const handleScroll=useCallback(()=> {
         
         <div className="left_side  ">
           <div onClick={() => handleClick("Home")}>
-            <NavLink to="/">
+            <NavLink to="/home">
               <div className="nav_logo flex ">
                 <img className="sm:w-[123.5px] w-[100px] sm:h-[42px] h-[32px]  " src={navlogo} alt="Global Connect Logo" />
                 {/* <img className="sm:w-[102px] w-[90px] sm:h-[46px] h-[36px] md:mt-[25px] mt-5 ml-[24px]" src={navlogo2} alt="Header Logo" /> */}

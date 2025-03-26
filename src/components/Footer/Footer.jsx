@@ -28,34 +28,34 @@ const Footer = () => {
             <h1 className="font-semibold">USEFUL LINKS</h1>
             <ul className="list-outside list-disc pl-5">
               <li className="text-[#007BFF] pt-[12px] ">
-                <NavLink to="/">
-                  <span className="text-[#CFCFCF]">Home</span>
+                <NavLink to="/home">
+                  <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Home</span>
                 </NavLink>
               </li>
               <li className="text-[#007BFF]">
                 <NavLink to="/about">
-                  <span className="text-[#CFCFCF]">About</span>
+                  <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">About</span>
                 </NavLink>
               </li>
 
               <li className="text-[#007BFF]">
                 <NavLink to="/services">
-                  <span className="text-[#CFCFCF]">Services</span>
+                  <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Services</span>
                 </NavLink>
               </li>
               <li className="text-[#007BFF]">
                 <NavLink to="/blog">
-                  <span className="text-[#CFCFCF]">Blog</span>
+                  <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Blog</span>
                 </NavLink>
               </li>
               <li className="text-[#007BFF]">
                   <NavLink to="/faq">
-                    <span className="text-[#CFCFCF]">FAQ</span>
+                    <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">FAQ</span>
                   </NavLink>
                 </li>
               <li className="text-[#007BFF]">
                 <NavLink to="/contact">
-                  <span className="text-[#CFCFCF]">Contact</span>
+                  <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Contact</span>
                 </NavLink>
               </li>
             </ul>
@@ -66,47 +66,47 @@ const Footer = () => {
             <ul className="list-outside list-disc pl-5 pt-[12px]">
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Hungary</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Hungary</span>
               </NavLink>
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Slovakia</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Slovakia</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Croatia</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Croatia</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Bulgaria</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Bulgaria</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Albania</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Albania</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Romania</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Romania</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
               <NavLink to="/country/hungary">
-                <span className="text-[#CFCFCF]">Norway</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Norway</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-                <span className="text-[#CFCFCF]">GCC</span>
+                <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">GCC</span>
               </li>
             </ul>
           </div>
