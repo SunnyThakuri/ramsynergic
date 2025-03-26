@@ -46,7 +46,7 @@ const EmblaCarousel = () => {
                     src={eh.url}
                     alt={eh.name}
                   />
-                  <p className="absolute backdrop-blur-[1px] w-fit px-4 py-1 z-5 text-lg rounded-lg md:text-xl tracking-tight font-semibold text-white bottom-2 left-2">
+                  <p className="absolute backdrop-blur-sm w-fit px-4 py-1 z-5 text-lg rounded-lg md:text-xl tracking-tight font-semibold text-white bottom-2 left-2">
                     {eh.name}
                   </p>
                   <p
