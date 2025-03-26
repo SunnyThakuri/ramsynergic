@@ -53,8 +53,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Faqs/>
-      <FaqCustom/>
+      <div className="mt-10">
+        <FaqCustom/>
+      </div>
       <div className="font-Poppins bg-[#00264F] mt-[124px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-10 lg:px-[166.5px] gap-[35px] py-[80px] md:py-[160px]">
         <div className="row-span-2">
           <h1 className="text-[#CFCFCF] font-semibold">
@@ -119,7 +120,6 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <Faqs/>
     </>
   );
 };
