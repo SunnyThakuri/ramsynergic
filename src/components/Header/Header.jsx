@@ -77,7 +77,7 @@ const handleScroll=useCallback(()=> {
 
               <NavLink to="/">
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:mt-auto mt-5 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:mt-auto mt-5 ${getTextClasses(
                     "Home"
                   )}`}
                   onClick={() => {handleClick("Home")
@@ -91,7 +91,7 @@ const handleScroll=useCallback(()=> {
 
               <NavLink to="/about">
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                     "About"
                   )}`}
                   onClick={() =>{ handleClick("About")
@@ -104,7 +104,7 @@ const handleScroll=useCallback(()=> {
 
               <NavLink to="/services">
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                     "Services"
                   )}`}
                   onClick={() => {handleClick("Services")
@@ -115,12 +115,11 @@ const handleScroll=useCallback(()=> {
                 </h1>
               </NavLink>
 
-              <div className="dropdown relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-6 md:pb-0 pb-3">
+              <div  className="dropdown relative inline-block cursor-pointer md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-6 md:pb-0 pb-3">
                 <h1
                   className="group"
-                  onClick={() => {
-                    setActive(!active);
-                  }}
+                  onMouseEnter={()=>setActive(true)}
+                  // onMouseLeave={()=>setActive(!active)}
                 >
                   Countries
                   <i className="fa-solid fa-chevron-down ml-2 text-[12px]"></i>
@@ -138,7 +137,7 @@ const handleScroll=useCallback(()=> {
               onClick={()=> setMobNav(!mobNav)}
               >
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                     "Blog"
                   )}`}
                   onClick={() => handleClick("Blog")}
@@ -151,7 +150,7 @@ const handleScroll=useCallback(()=> {
               onClick={()=> setMobNav(!mobNav)}
               >
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                     "FAQ"
                   )}`}
                   onClick={() => handleClick("FAQ")}
@@ -164,7 +163,7 @@ const handleScroll=useCallback(()=> {
               onClick={()=> setMobNav(!mobNav)}
               >
                 <h1
-                  className={`md:border-none border-b-[1px] border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
+                  className={`md:border-none border-b-[1px] hover:scale-110 border-gray-400 md:pl-0 pl-5 md:pt-0 pt-3 md:pb-0 pb-3 ${getTextClasses(
                     "Contact"
                   )}`}
                   onClick={() => handleClick("Contact")}
