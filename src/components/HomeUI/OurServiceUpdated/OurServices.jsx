@@ -27,7 +27,7 @@ function OurServicesUpdated() {
         <div className="relative h-60 md:h-96 rounded-lg shadow-md" onClick={()=> redirect("/services")} >
         <img  
           className="object-cover h-full w-full absolute rounded-xl brightness-75" 
-          src="/ourservices/consulting.webp"  />
+          src="/HomeUI/consultant1.jpg"  />
         <p className="absolute z-10 text-white bottom-1 md:bottom-2 left-0 mx-1 md:left-0 md:px-6 px-2 py-1 md:py-3 md:text-xl lg:text-2xl rounded-lg" >Consulting Services</p>
         </div>
       </div>
