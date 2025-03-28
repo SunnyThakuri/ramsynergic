@@ -6,6 +6,7 @@ import ContactForm from "./ContactForm";
 import { useNavigate } from "react-router-dom";
 import Faqs from "../components/ServicesUI/Faqs";
 import FaqCustom from "../components/ServicesUI/FaqCustom";
+import { FaFacebook,FaInstagram,FaTiktok,FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const redirect=useNavigate()
@@ -47,6 +48,21 @@ const Contact = () => {
               Connect With Us. Use our contact form to reach out, and our team
               will assist you promptly. Your journey starts here.
             </p>
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com/globalconnect.fb">
+                <FaFacebook  className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
+              </a>
+              <a href="https://www.instagram.com/theglobal.connect
+">
+                <FaInstagram className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
+              </a>
+              <a href="https://www.tiktok.com/@globalconnect.europe">
+                <FaTiktok className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
+              </a>
+              <a href="https://wa.me/971567895360">
+                <FaWhatsapp className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
+              </a>
+            </div>
           </div>
           <div className="right_side w-full lg:w-[674px]">
             <ContactForm />
