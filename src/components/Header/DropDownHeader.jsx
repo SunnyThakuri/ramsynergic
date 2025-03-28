@@ -103,7 +103,7 @@ function DropDownHeader({ setMobNav }) {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-1">
       {/* European Country Dropdown */}
       <div
         className="relative group"
@@ -111,14 +111,14 @@ function DropDownHeader({ setMobNav }) {
         onMouseLeave={handleMouseLeave}
       >
         <div
-          className={`border-b mx-1 rounded-lg my-1 ${
+          className={`border-b mx-1 rounded-md my-1 ${
             activeDropdown === "eu" ? "bg-[#00254F] text-white" : "hover:bg-gray-50"
           }`}
         >
           <p className="text-center text-[14px] p-1">European Country</p>
         </div>
         {activeDropdown === "eu" && (
-          <div className="absolute top-0 left-full w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
+          <div className="absolute rounded-md  top-0 left-full w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
             {countrySellected.slice(0, 11).map((eh) => (
               <Link
                 to={`/country/${eh.name}`}
@@ -150,7 +150,7 @@ function DropDownHeader({ setMobNav }) {
           <p className="text-center text-[14px] p-1">GCC Country</p>
         </div>
         {activeDropdown === "gcc" && (
-          <div className="absolute top-0 left-full w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
+          <div className="absolute rounded-md py-1 top-0 left-full w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
             {countrySellected.slice(11).map((eh) => (
               <Link
                 to={`/country/${eh.name}`}
