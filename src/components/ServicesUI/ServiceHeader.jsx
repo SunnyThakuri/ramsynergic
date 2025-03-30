@@ -14,7 +14,7 @@ function ServiceHeader() {
     dragFree:true
   },[AutoPlay()])
   return (
-    <div className="  space-y-12 mt-12 px-4 md:px-12">
+    <div className="  space-y-12 mt-12 md:pt-8 px-4 md:px-12">
       <div
       className="relative flex flex-col md:flex-row gap-12 "
       >
