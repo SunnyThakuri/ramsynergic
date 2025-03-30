@@ -14,8 +14,29 @@ const success = [
   {
     id:0,
     name:"Mikmar Lama",
-    image:"/images/",
+    image:"/images/HomeUI/success/user1",
     location:"Sindhupalchok, Nepal",
+    quote:"With their extensive network and industry expertise, they opened doors to opportunities I never knew existed, propelling my career to new heights."
+  },
+  {
+    id:1,
+    name:"Umesh Khatri",
+    image:"/images/HomeUI/success/user1",
+    location:"Ramechhap, Nepal",
+    quote:"With their extensive network and industry expertise, they opened doors to opportunities I never knew existed, propelling my career to new heights."
+  },
+  {
+    id:2,
+    name:"Subash Thapa",
+    image:"/images/HomeUI/success/user1",
+    location:"Nawalparasi, Nepal",
+    quote:"With their extensive network and industry expertise, they opened doors to opportunities I never knew existed, propelling my career to new heights."
+  },
+  {
+    id:3,
+    name:"Shyam Shrestha",
+    image:"/images/HomeUI/success/user1",
+    location:"Dolakha, Nepal",
     quote:"With their extensive network and industry expertise, they opened doors to opportunities I never knew existed, propelling my career to new heights."
   },
 ]
