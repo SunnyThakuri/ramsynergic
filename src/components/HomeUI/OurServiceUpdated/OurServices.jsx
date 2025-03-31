@@ -37,49 +37,53 @@ import { useNavigate } from "react-router-dom"
 
 const OurServicesUpdated = () =>{
   return(
-    <div className="md:px-[150px] px-4 md:py-24">
+    <div className="md:px-[150px] space-y-6 px-4 md:py-24">
       <p className="text-3xl font-semibold  text-center">OUR SERVICES</p>
-      <p>random</p>
-      <div className="flex gap-6">
+      <p className="text-sm text-gray-500">At Global Connect, we specialize in providing tailored solutions to help our 
+        clients unlock the full potential of their human capital, drive organizational excellence, and achieve 
+        sustainable growth. By understanding each client's unique needs and embracing innovation, 
+        we strive to deliver comprehensive and tailored solutions that leave a lasting impact. 
+      </p>
+      <div className="grid grid-cols-4 gap-6">
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-md md:h-[400px]"> 
-          <div className="h-12 w-12">
-            <img src="https://bestvisionhr.ae/wp-content/uploads/2023/11/management.png" 
+        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+          <div className="h-20 w-20 mx-auto">
+            <img src="https://cdn-icons-png.flaticon.com/128/10485/10485059.png" 
                   alt="" 
-                  className="w-full h-full object-cover"/>
+                  className="w-full h-full object-cover "/>
           </div>
           <p className="text-2xl font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
           <p>We connect top talent with leading employers through our specialized recruitment services.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-md md:h-[400px]"> 
-          <div className="h-12 w-12">
-            <img src="https://bestvisionhr.ae/wp-content/uploads/2023/11/management.png" 
+        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+          <div className="h-20 w-20 mx-auto">
+            <img src="https://cdn-icons-png.flaticon.com/128/12630/12630793.png" 
                   alt="" 
-                  className="w-full h-full object-cover"/>
+                  className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
-          <p>We connect top talent with leading employers through our specialized recruitment services.</p>
+          <p className="text-2xl font-meduim">CONSULTING SERVICES</p>
+          <p>Our expert consulting services optimize business performance and drive growth.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-md md:h-[400px]"> 
-          <div className="h-12 w-12">
-            <img src="https://bestvisionhr.ae/wp-content/uploads/2023/11/management.png" 
+        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+          <div className="h-20 w-20 mx-auto">
+            <img src="https://cdn-icons-png.flaticon.com/128/9746/9746082.png" 
                   alt="" 
-                  className="w-full h-full object-cover"/>
+                  className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
-          <p>We connect top talent with leading employers through our specialized recruitment services.</p>
+          <p className="text-2xl font-meduim">MANPOWER SOLUTIONS</p>
+          <p>We deliver customized workforce solutions to boost efficiency and productivity.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-md md:h-[400px]"> 
-          <div className="h-12 w-12">
-            <img src="https://bestvisionhr.ae/wp-content/uploads/2023/11/management.png" 
+        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+          <div className="h-20 w-20 mx-auto">
+            <img src="https://cdn-icons-png.flaticon.com/128/15189/15189295.png" 
                   alt="" 
-                  className="w-full h-full object-cover"/>
+                  className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
-          <p>We connect top talent with leading employers through our specialized recruitment services.</p>
+          <p className="text-2xl font-meduim">TALENT ACQUISITION</p>
+          <p>We expertly match top candidates with leading employers, ensuring the best fit.</p>
         </div>
         
         
