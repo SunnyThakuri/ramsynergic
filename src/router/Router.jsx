@@ -15,6 +15,7 @@ import BlogIndividual from "../components/BlogIndividual/BlogIndividual"
 import ScrollToTop from "./ScrollToTop"
 import Country from "../components/Countries/Country"
 import Faq from "../pages/Faq"
+
 const Router = () => {
   return (
     <>

@@ -12,6 +12,7 @@ import Testimonials from "../components/HomeUI/Testimonials"
 /* import MainSectir from "../components/HomeUI/UpdatedAbout/MainSectir" */
 import SubCountrySlider from "../components/HomeUI/UpdatedAbout/SubCountrySlider";
 import AboutDiscover from "../components/AboutUI/AboutDiscover";
+import EuSuccessStories from "../components/HomeUI/EuSuccessStories";
 
 const Home = () => {
   return (
@@ -19,13 +20,14 @@ const Home = () => {
       <HeroSlider />
       <GlobalOperation />
       <SubCountrySlider />
+      <SuccessStories />
+      <EuSuccessStories/>
       <OurServices />
 
       <OurServicesUpdated />
 
       <AboutDiscover />
       <Opportunities />
-      <SuccessStories />
 
       <ContactUI />
     </>

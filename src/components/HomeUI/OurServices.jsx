@@ -61,7 +61,7 @@ useEffect(()=> {
 
   return (
     <>
-      <div className="bg-[#00254F]  mt-32 pb-24 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px]">
+      <div className="bg-[#00254F]  pb-24 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px]">
         <div className="">
           <div className="heading pt-24 border-b-2 border-b-[#B2AFAF]  flex flex-col justify-between">
             <h1 className="text-[#F7F7F7] text-2xl md:text-3xl font-semibold">

@@ -35,7 +35,7 @@ const success = [
   },
 ]
 
-const CustomSlider = () => {
+const EuSuccessStories = () => {
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -77,10 +77,10 @@ const CustomSlider = () => {
 
   return (
     <>
-      <div className="bg-[#00254F] mt-[124px] flex flex-col md:flex-row">
+      <div className="bg-[#00254F]  flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
           <h1 className="text-[#F7F7F7] font-semibold text-[28px]">
-            UAE Success Stories
+            EU Success Stories
           </h1> 
           <p className="text-[#F7F7F7] text-left tracking-tight md:w-[363px] pt-[16px]">
             Our legal experts guide clients through a seamless relocation
@@ -113,7 +113,7 @@ const CustomSlider = () => {
           
         <div className="right_side hidden md:block pt-[154px] pl-[50px] font-Poppins">
           <h1 className="text-[#F7F7F7] font-semibold text-[32px]">
-            UAE Success Stories
+            EU Success Stories
           </h1>
           <p className="text-[#F7F7F7] w-[250px] md:w-[363px] pt-[16px]">
             Our legal experts guide clients through a seamless relocation
@@ -125,4 +125,4 @@ const CustomSlider = () => {
   );
 };
 
-export default CustomSlider;
+export default EuSuccessStories;
