@@ -37,7 +37,7 @@ import { useNavigate } from "react-router-dom"
 
 const OurServicesUpdated = () =>{
   return(
-    <div className="md:px-[150px] space-y-6 px-4 md:py-24">
+    <div className="md:px-[100px] space-y-8 px-4 md:py-24">
       <p className="text-3xl font-semibold  text-center">OUR SERVICES</p>
       <p className="text-sm text-gray-500">At Global Connect, we specialize in providing tailored solutions to help our 
         clients unlock the full potential of their human capital, drive organizational excellence, and achieve 
@@ -46,44 +46,44 @@ const OurServicesUpdated = () =>{
       </p>
       <div className="grid grid-cols-4 gap-6">
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+        <div className="space-y-6 p-4 shadow-lg md:h-[380px] hover:shadow-md rounded-lg "> 
           <div className="h-20 w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/10485/10485059.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
-          <p>We connect top talent with leading employers through our specialized recruitment services.</p>
+          <p className="text-2xl text-[#00254F] pt-8 text-center font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
+          <p  className="text-gray-600">We connect top talent with leading employers through our specialized recruitment services.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+        <div className="space-y-6 p-4 shadow-lg md:h-[380px] hover:shadow-md rounded-lg "> 
           <div className="h-20 w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/12630/12630793.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">CONSULTING SERVICES</p>
-          <p>Our expert consulting services optimize business performance and drive growth.</p>
+          <p className="text-2xl text-[#00254F] pt-8 font-meduim text-center">CONSULTING SERVICES</p>
+          <p className="text-gray-600">Our expert consulting services optimize business performance and drive growth.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+        <div className="space-y-6 p-4 shadow-lg md:h-[380px] hover:shadow-md rounded-lg "> 
           <div className="h-20 w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/9746/9746082.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
-          <p className="text-2xl font-meduim">MANPOWER SOLUTIONS</p>
-          <p>We deliver customized workforce solutions to boost efficiency and productivity.</p>
+          <p className="text-2xl text-[#00254F] pt-8 font-meduim text-center">MANPOWER SOLUTIONS</p>
+          <p className="text-gray-600">We deliver customized workforce solutions to boost efficiency and productivity.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-lg md:h-[400px] hover:shadow-md rounded-lg "> 
+        <div className="space-y-6 p-4 shadow-lg md:h-[380px] hover:shadow-md rounded-lg "> 
           <div className="h-20 w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/15189/15189295.png" 
                   alt="" 
-                  className="w-full h-full object-cover "/>
+                  className="w-full h-full object-cover  "/>
           </div>
-          <p className="text-2xl font-meduim">TALENT ACQUISITION</p>
-          <p>We expertly match top candidates with leading employers, ensuring the best fit.</p>
+          <p className="text-2xl text-[#00254F] pt-8 font-meduim text-center">TALENT ACQUISITION</p>
+          <p className="text-gray-600">We expertly match top candidates with leading employers, ensuring the best fit.</p>
         </div>
         
         
