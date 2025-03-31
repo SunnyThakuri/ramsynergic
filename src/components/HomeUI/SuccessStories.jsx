@@ -66,7 +66,7 @@ const CustomSlider = () => {
 
   return (
     <>
-      <div className=" mt-[124px] flex flex-col md:flex-row">
+      <div className=" md:py-16 py-8 flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
           <h1 className="text-[#00254F] font-semibold text-[28px]">
             UAE Success Stories
@@ -84,9 +84,9 @@ const CustomSlider = () => {
           >
             {
               success.map((user,index) =>(
-                <div key={index} className="w-[300px] md:w-[400px] border-[10px] border-[#F7F7F7]   md:h-[450px] rounded-2xl ">  
+                <div key={index} className="w-[300px] md:w-[400px] border-[10px] border-[#F7F7F7] h-[350px]  md:h-[450px] rounded-2xl ">  
                   <div className="h-full w-full">
-                        <img src={user} alt={user} className="h-full w-full object-cover rounded-2xl" />
+                        <img src={user} alt={user} className="h-full w-full md:object-cover rounded-2xl" />
                     </div>
                 </div>
               ))

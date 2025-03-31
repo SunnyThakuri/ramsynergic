@@ -6,7 +6,7 @@ function SubCountrySlider() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [AutoPlay({stopOnInteraction:false})]);
 
   return (
-    <div className="relative overflow-hidden mx-4 mt-12 fill-slate-400"> 
+    <div className="relative overflow-hidden mx-4 py-12 fill-slate-400"> 
       <div className="overflow-hidden" ref={emblaRef}>
       
         <div className="flex"> 
