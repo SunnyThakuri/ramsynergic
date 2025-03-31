@@ -4,36 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../style/SuccessStories.css";
 
-// const success = [
-//   {
-//     id:0,
-//     name:"Mikmar Lama",
-//     image:"/HomeUI/success/user1.png",
-//     location:"Sindhupalchok, Nepal",
-//     quote:"With their extensive network and industry expertise, they opened doors to opportunities I never knew existed, propelling my career to new heights."
-//   },
-//   {
-//     id:1,
-//     name:"Umesh Khatri",
-//     image:"/HomeUI/success/user2.png",
-//     location:"Ramechhap, Nepal",
-//     quote:"Thanks to their vast network and deep industry knowledge, they unlocked opportunities I never thought possible, significantly advancing my career."
-//   },
-//   {
-//     id:2,
-//     name:"Subash Thapa",
-//     image:"/HomeUI/success/user3.png",
-//     location:"Nawalparasi, Nepal",
-//     quote:"Their extensive connections and profound understanding of the industry revealed new pathways for my professional growth, elevating my career to unprecedented levels."
-//   },
-//   {
-//     id:3,
-//     name:"Shyam Shrestha",
-//     image:"/HomeUI/success/user4.png",
-//     location:"Dolakha, Nepal",
-//     quote:"Thanks to their extensive connections and deep industry expertise, they revealed a multitude of new opportunities, transforming my career trajectory and pushing me to new heights of success."
-//   },
-// ]
 
 const success = [
   "/New folder/uae1.jpg",
@@ -48,7 +18,7 @@ const CustomSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="successStories hidden md:block forward-arrow  right-12 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="successStories hidden md:block forward-arrow bg-[#00254F]  right-12 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="rotate-180 relative top-1.5 right-3.5 sm:text-[12px] text-[10px] text-white  ">
@@ -62,7 +32,7 @@ const CustomSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="successStories hidden md:block backward-arrow right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="successStories hidden md:block border-[#00254F] border-[1px] backward-arrow right-0 md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="text-[#00254F] relative top-2.5 left-3.5 sm:text-[12px] text-[10px] ">
