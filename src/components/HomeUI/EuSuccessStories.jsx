@@ -95,7 +95,7 @@ const EuSuccessStories = () => {
           >
             {
               success.map((user,index) =>(
-                <div index={index} className="slide01  w-[300px] md:w-[607px] border-[10px] border-[#00254F] py-12  md:h-[450px] rounded-[12px] bg-white  ">
+                <div index={index} className="slide01   w-[300px] md:w-[607px] border-[10px] border-[#00254F] py-12  md:h-[450px] rounded-2xl bg-white  ">
                   <div className="img flex  justify-center md:pt-[60px]">
                     <img src={user.image} alt={user.name} className="h-24 w-24 rounded-full object-cover" />
                   </div>
