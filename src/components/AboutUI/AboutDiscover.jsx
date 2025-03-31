@@ -3,7 +3,7 @@ import discoveuserimg from "../../assets/HomeUI/discoverUserImg.png";
 const AboutDiscover = () => {
   return (
     <>
-      <div className="dicover 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px] mt-[124px] bg-[#00254F] font-Poppins">
+      <div className="dicover 2xl:px-[166.5px] xl:px-[100px] lg:px-[80px] md:px-[50px] sm:px-[20px] px-[10px] bg-[#00254F] font-Poppins">
         <h1 className=" md:text-[20px] text-white  md:font-semibold md:text-center xl:px-[260px] lg:px-[150px] md:px-[50px] sm:px-[20px] pt-14  md:pt-[120px]">
           With our strong global network, we connect skilled professionals with
           top employers worldwide, ensuring reliable job placements and a smooth
