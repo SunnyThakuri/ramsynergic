@@ -49,6 +49,17 @@ const EuSuccessStories = () => {
     centerPadding: "",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768, // For devices with width <= 768px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "50px", // Adjust padding as needed
+        },
+      },
+    ],
   };
 
   return (
@@ -78,7 +89,7 @@ const EuSuccessStories = () => {
           >
             {
               success.map((user,index) =>(
-                <div index={index} className="w-[300px] md:w-[400px] border-[10px] border-[#00254F]  md:h-[560px] rounded-2xl ">
+                <div key={index} className="w-[300px] md:w-[400px] border-[10px] border-[#00254F]  md:h-[560px] rounded-2xl ">
                   <div className="h-full w-full rounded-2xl">
                         <img src={user} alt={user} className="h-full w-full object-cover rounded-2xl" />
                     </div>

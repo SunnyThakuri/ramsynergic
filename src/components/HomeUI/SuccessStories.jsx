@@ -51,16 +51,27 @@ const CustomSlider = () => {
     centerPadding: "",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768, // For devices with width <= 768px
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "50px", // Adjust padding as needed
+        },
+      },
+    ],
   };
 
   return (
     <>
       <div className=" mt-[124px] flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
-          <h1 className="text-[#F7F7F7] font-semibold text-[28px]">
+          <h1 className="text-[#00254F] font-semibold text-[28px]">
             UAE Success Stories
           </h1> 
-          <p className="text-[#F7F7F7] text-left tracking-tight md:w-[363px] pt-[16px]">
+          <p className="text-[#00254F] text-left tracking-tight md:w-[363px] pt-[16px]">
             Our legal experts guide clients through a seamless relocation
             process, leveraging global resources and immigration expertise.
           </p>
@@ -73,17 +84,7 @@ const CustomSlider = () => {
           >
             {
               success.map((user,index) =>(
-                <div index={index} className="w-[300px] md:w-[400px] border-[10px] border-[#F7F7F7]  md:h-[450px] rounded-2xl ">
-                  {/* <div className="img flex  justify-center md:pt-[60px]">
-                    <img src={user.image} alt={user.name} className="h-24 w-24 rounded-full object-cover" />
-                  </div>
-                  <h1 className="text-center pt-3 text-[22px] text-[#2C2C2C] font-semibold">
-                  {user.name}
-                  </h1>
-                  <h1 className="text-center text-sm md:text-md pt-3">{user.location} </h1>
-                  <p className="px-1  hidden sm:block  text-[#333333] pt-5 md:px-4 ">
-                    {user.quote}
-                  </p> */}
+                <div key={index} className="w-[300px] md:w-[400px] border-[10px] border-[#F7F7F7]   md:h-[450px] rounded-2xl ">  
                   <div className="h-full w-full">
                         <img src={user} alt={user} className="h-full w-full object-cover rounded-2xl" />
                     </div>
