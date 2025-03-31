@@ -53,7 +53,7 @@ const EuSuccessStories = () => {
 
   return (
     <>
-      <div className=" bg-[#00254F] flex flex-col md:flex-row">
+      <div className=" bg-[#00254F] md:gap-16 flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
             <h1 className="text-[#F7F7F7] font-semibold text-[28px]">
                 EU Success Stories
@@ -78,8 +78,8 @@ const EuSuccessStories = () => {
           >
             {
               success.map((user,index) =>(
-                <div index={index} className="w-[300px] md:w-[400px] border-[10px] border-[#00254F]  md:h-[450px] rounded-2xl ">
-                  <div className="h-full w-full">
+                <div index={index} className="w-[300px] md:w-[400px] border-[10px] border-[#00254F]  md:h-[560px] rounded-2xl ">
+                  <div className="h-full w-full rounded-2xl">
                         <img src={user} alt={user} className="h-full w-full object-cover rounded-2xl" />
                     </div>
                 </div>
