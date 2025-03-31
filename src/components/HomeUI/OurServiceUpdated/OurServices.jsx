@@ -38,14 +38,14 @@ import { useNavigate } from "react-router-dom"
 const OurServicesUpdated = () =>{
   const redirect= useNavigate()
   return(
-    <div className="md:px-[100px] space-y-8 px-4 md:py-24">
+    <div className="md:px-[100px] space-y-8 px-4 py-8 md:py-24">
       <p className="text-3xl font-semibold  text-center">OUR SERVICES</p>
       <p className="text-sm text-gray-500">At Global Connect, we specialize in providing tailored solutions to help our 
         clients unlock the full potential of their human capital, drive organizational excellence, and achieve 
         sustainable growth. By understanding each client's unique needs and embracing innovation, 
         we strive to deliver comprehensive and tailored solutions that leave a lasting impact. 
       </p>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-2  lg:grid-cols-4 gap-6">
         {/* Card1 */}
         <div className="space-y-6 p-4 shadow-lg md:h-[380px] hover:shadow-md rounded-lg " 
           onClick={()=> redirect('/services')}> 
