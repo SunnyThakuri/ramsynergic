@@ -66,7 +66,7 @@ const CustomSlider = () => {
 
   return (
     <>
-      <div className=" md:py-16 py-8 flex flex-col md:flex-row">
+      <div className=" md:py-16 py-8 px-16 justify-between  flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
           <h1 className="text-[#00254F] font-semibold text-[28px]">
             UAE Success Stories
