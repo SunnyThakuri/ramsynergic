@@ -66,7 +66,7 @@ const CustomSlider = () => {
 
   return (
     <>
-      <div className=" md:py-16 py-8 px-16 justify-between  flex flex-col md:flex-row">
+      <div className=" md:py-16 py-8 md:px-16 justify-between  flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
           <h1 className="text-[#00254F] font-semibold text-[28px]">
             UAE Success Stories
@@ -80,14 +80,14 @@ const CustomSlider = () => {
         
           <Slider
             {...settings}
-            className="md:w-[60%] gap-5 overflow-hidden pt-12 md:pt-[87px] rounded-[20px] md:pb-[127px] md:mr-[20px]"
+            className="md:w-[60%] gap-5 overflow-hidden pt-12 md:pt-[87px] rounded-[20px] md:pb-[127px]"
           >
             {
               success.map((user,index) =>(
-                <div key={index} className="w-[300px] md:w-[400px] border-[10px] border-[#F7F7F7] h-[350px]  md:h-[450px] rounded-2xl ">  
+                <div key={index} className="md:w-full border-[10px] border-[#F7F7F7]  h-[350px]  md:h-[450px] rounded-2xl ">  
                   <div className="h-full w-full">
-                        <img src={user} alt={user} className="h-full w-full md:object-cover rounded-2xl" />
-                    </div>
+                    <img src={user} alt={user} className="h-full  w-full md:object-cover rounded-2xl" />
+                  </div>
                 </div>
               ))
             }

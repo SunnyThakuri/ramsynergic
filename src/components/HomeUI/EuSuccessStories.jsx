@@ -64,7 +64,7 @@ const EuSuccessStories = () => {
 
   return (
     <>
-      <div className=" bg-[#00254F] md:gap-16 flex flex-col md:flex-row">
+      <div className=" bg-[#00254F] py-8 md:gap-16 flex flex-col md:flex-row">
         <div className=" pt-12 px-8 font-Poppins md:hidden">
             <h1 className="text-[#F7F7F7] font-semibold text-[28px]">
                 EU Success Stories
