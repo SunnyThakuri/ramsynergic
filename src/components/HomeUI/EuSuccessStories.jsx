@@ -64,8 +64,8 @@ const EuSuccessStories = () => {
 
   return (
     <>
-      <div className=" bg-[#00254F] py-8 md:gap-16 flex flex-col md:flex-row">
-        <div className=" pt-12 px-8 font-Poppins md:hidden">
+      <div className=" bg-[#00254F]  py-8 md:px-16 md:gap-16 flex flex-col md:flex-row">
+        <div className=" pt-12 px-8 font-Poppins md:hidden ">
             <h1 className="text-[#F7F7F7] font-semibold text-[28px]">
                 EU Success Stories
             </h1> 
@@ -85,7 +85,7 @@ const EuSuccessStories = () => {
         </div>
         <Slider
             {...settings}
-            className="md:w-[60%] gap-5 overflow-hidden pt-12 md:pt-[87px] rounded-[20px] md:pb-[127px] md:mr-[20px]"
+            className="md:w-[60%]  gap-5 overflow-hidden pt-12 md:pt-[87px] rounded-[20px] md:pb-[127px] md:mr-[20px]"
           >
             {
               success.map((user,index) =>(
