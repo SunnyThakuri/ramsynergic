@@ -13,7 +13,7 @@ const HeroSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow next-arrow 2xl:right-[212px] xl:right-[148px] lg:right-[126px] md:right-[98px] sm:right-[114px] right-[55px]  xl:bottom-[120px] lg:bottom-[100px] bottom-[95px] md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="slick-arrow z-40 next-arrow 2xl:right-[212px] xl:right-[148px] lg:right-[126px] md:right-[98px] sm:right-[114px] right-[55px]  xl:bottom-[120px] lg:bottom-[100px] bottom-[95px] md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="rotate-180 sm:text-[12px] text-[10px] text-white  "><i className="fa-solid fa-play"></i></p>
@@ -25,7 +25,7 @@ const HeroSlider = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow prev-arrow 2xl:right-[166.5px] xl:right-[100px] lg:right-[80px] md:right-[50px] sm:right-[80px] right-[20px]  xl:bottom-[120px] lg:bottom-[100px] bottom-[95px] md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
+        className="slick-arrow z-40 prev-arrow 2xl:right-[166.5px] xl:right-[100px] lg:right-[80px] md:right-[50px] sm:right-[80px] right-[20px]  xl:bottom-[120px] lg:bottom-[100px] bottom-[95px] md:w-[36px] w-[26px] h-[26px] md:h-[36px]"
         onClick={onClick}
       >
         <p className="text-[#9A5A36] sm:text-[12px] text-[10px] "><i className="fa-solid fa-play"></i></p>
