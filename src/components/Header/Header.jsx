@@ -377,22 +377,23 @@ const Navbar = () => {
       </NavLink>
 
       {/* Dropdown for Countries */}
-      <div className="relative">
-        <span
-          className="block flex justify-between items-center text-gray-500 hover:text-blue-900 cursor-pointer"
-          onClick={() => setActive((prev) => !prev)}
-        >
-          Countries
-          <i
-            className={`ml-2 fa-solid fa-chevron-${active ? "up" : "down"} text-sm`}
-          ></i>
-        </span>
-        {active && (
-          <div className="pl-2 mt-2 bg-white rounded-md shadow-md">
-            <DropDownHeader setMobNav={setMobNav} />
-          </div>
-        )}
-      </div>
+        <div className="block text-gray-500">
+          <span
+            className="flex justify-between items-center hover:text-blue-900 cursor-pointer"
+            onClick={() => setActive((prev) => !prev)}
+          >
+            Countries
+            <i
+              className={`ml-2 fa-solid fa-chevron-${active ? "up" : "down"} text-sm`}
+            ></i>
+          </span>
+          {active && (
+            <div className="pl-4 mt-2 space-y-2">
+              {/* Pass setMobNav to DropDownHeader */}
+              <DropDownHeader setMobNav={setMobNav} />
+            </div>
+          )}
+        </div>
 
       <NavLink
         to="/contact"
