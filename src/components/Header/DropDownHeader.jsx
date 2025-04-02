@@ -29,7 +29,7 @@ function DropDownHeader({ setMobNav }) {
           <p className="text-center text-[14px] p-1">European Country</p>
         </div>
         {activeDropdown === "eu" && (
-          <div className="absolute rounded-md  top-0 left-full w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
+          <div className="absolute rounded-md  top-0 right-full md:left-full w-[150px] md:w-[200px] max-h-[200px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
             {countrySellected.slice(0, 11).map((eh) => (
               <Link
                 to={`/country/${eh.name}`}
@@ -61,7 +61,7 @@ function DropDownHeader({ setMobNav }) {
           <p className="text-center text-[14px] p-1">GCC Country</p>
         </div>
         {activeDropdown === "gcc" && (
-          <div className="absolute  rounded-md py-1 top-0 left-full w-[150px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
+          <div className="absolute  rounded-md py-1 top-0 right-full md:left-full w-[150px] overflow-y-auto scrollbar-hide border-1 border-gray-300 bg-slate-50 shadow-lg">
             {countrySellected.slice(11).map((eh) => (
               <Link
                 to={`/country/${eh.name}`}
