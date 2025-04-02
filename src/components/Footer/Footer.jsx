@@ -28,7 +28,7 @@ const Footer = () => {
             <h1 className="font-semibold">USEFUL LINKS</h1>
             <ul className="list-outside list-disc pl-5">
               <li className="text-[#007BFF] pt-[12px] ">
-                <NavLink to="/home">
+                <NavLink to="/">
                   <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Home</span>
                 </NavLink>
               </li>

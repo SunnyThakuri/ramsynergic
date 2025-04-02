@@ -47,48 +47,48 @@ const OurServicesUpdated = () =>{
       </p>
       <div className="grid grid-cols-2  lg:grid-cols-4 gap-6">
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
+        <div className="md:space-y-6 p-4 shadow-xl  md:h-[380px] hover:shadow-md rounded-lg " 
           onClick={()=> redirect('/services')}> 
-          <div className="h-20 w-20 mx-auto">
+          <div className="md:h-20 h-16 w-16 md:w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/10485/10485059.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
           <p className="text-lg md:text-2xl text-[#00254F] pt-8 text-center font-meduim">EXPERT RECRUITMENT in GCC & Europe</p>
-          <p  className="text-gray-600 hidden sm:block">We connect top talent with leading employers through our specialized recruitment services.</p>
+          <p  className="text-gray-600 hidden sm:block text-center">We connect top talent with leading employers through our specialized recruitment services.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
+        <div className="md:space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
           onClick={()=> redirect('/services')}> 
-          <div className="h-20 w-20 mx-auto">
+          <div className="md:h-20 h-16 w-16 md:w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/12630/12630793.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
           <p className="text-lg md:text-2xl text-[#00254F] pt-8 font-meduim text-center">CONSULTING SERVICES</p>
-          <p className="text-gray-600 hidden sm:block">Our expert consulting services optimize business performance and drive growth.</p>
+          <p className="text-gray-600 hidden sm:block text-center">Our expert consulting services optimize business performance and drive growth.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
+        <div className="md:space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
           onClick={()=> redirect('/services')}> 
-          <div className="h-20 w-20 mx-auto">
+          <div className="md:h-20 h-16 w-16 md:w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/9746/9746082.png" 
                   alt="" 
                   className="w-full h-full object-cover "/>
           </div>
           <p className="text-lg md:text-2xl text-[#00254F] pt-8 font-meduim text-center">MANPOWER SOLUTIONS</p>
-          <p className="text-gray-600 hidden sm:block">We deliver customized workforce solutions to boost efficiency and productivity.</p>
+          <p className="text-gray-600 hidden sm:block text-center">We deliver customized workforce solutions to boost efficiency and productivity.</p>
         </div>
         {/* Card1 */}
-        <div className="space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
+        <div className="md:space-y-6 p-4 shadow-xl md:h-[380px] hover:shadow-md rounded-lg " 
           onClick={()=> redirect('/services')}> 
-          <div className="h-20 w-20 mx-auto">
+          <div className="md:h-20 h-16 w-16 md:w-20 mx-auto">
             <img src="https://cdn-icons-png.flaticon.com/128/15189/15189295.png" 
                   alt="" 
                   className="w-full h-full object-cover  "/>
           </div>
           <p className="text-lg md:text-2xl text-[#00254F] pt-8 font-meduim text-center">TALENT ACQUISITION</p>
-          <p className="text-gray-600 hidden sm:block">We expertly match top candidates with leading employers, ensuring the best fit.</p>
+          <p className="text-gray-600 hidden sm:block text-center">We expertly match top candidates with leading employers, ensuring the best fit.</p>
         </div>
         
         
