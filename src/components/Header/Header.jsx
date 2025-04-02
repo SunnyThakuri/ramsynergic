@@ -329,82 +329,82 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-{mobNav && (
-  <div
-    className={`fixed top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform duration-300 ${
-      mobNav ? "translate-x-0" : "translate-x-full"
-    }`}
-  >
-    {/* Close Button */}
-    <div className="flex justify-end px-4 py-2">
-      <button
-        onClick={() => setMobNav(false)}
-        className="text-gray-500 hover:text-blue-900"
-      >
-        <i className="fa-solid fa-xmark text-lg"></i>
-      </button>
-    </div>
+      {mobNav && (
+        <div
+          className={`fixed top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform  ${
+            mobNav ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Button */}
+          <div className="flex justify-end px-6 py-5">
+            <button
+              onClick={() => setMobNav(false)}
+              className="text-gray-500 hover:text-blue-900"
+            >
+              <i className="fa-solid text-2xl fa-xmark "></i>
+            </button>
+          </div>
 
-    {/* Links */}
-    <div className="px-5 space-y-4">
-      <NavLink
-        to="/"
-        className="block text-gray-500 hover:text-blue-900"
-        onClick={() => setMobNav(false)}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className="block text-gray-500 hover:text-blue-900"
-        onClick={() => setMobNav(false)}
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/services"
-        className="block text-gray-500 hover:text-blue-900"
-        onClick={() => setMobNav(false)}
-      >
-        Services
-      </NavLink>
-      <NavLink
-        to="/blog"
-        className="block text-gray-500 hover:text-blue-900"
-        onClick={() => setMobNav(false)}
-      >
-        Blog
-      </NavLink>
+          {/* Links */}
+          <div className="px-5 space-y-4">
+            <NavLink
+              to="/"
+              className="block text-gray-500 hover:text-blue-900"
+              onClick={() => setMobNav(false)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="block text-gray-500 hover:text-blue-900"
+              onClick={() => setMobNav(false)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/services"
+              className="block text-gray-500 hover:text-blue-900"
+              onClick={() => setMobNav(false)}
+            >
+              Services
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className="block text-gray-500 hover:text-blue-900"
+              onClick={() => setMobNav(false)}
+            >
+              Blog
+            </NavLink>
 
-      {/* Dropdown for Countries */}
-        <div className="block text-gray-500">
-          <span
-            className="flex justify-between items-center hover:text-blue-900 cursor-pointer"
-            onClick={() => setActive((prev) => !prev)}
-          >
-            Countries
-            <i
-              className={`ml-2 fa-solid fa-chevron-${active ? "up" : "down"} text-sm`}
-            ></i>
-          </span>
-          {active && (
-            <div className="pl-4 mt-2 space-y-2">
-              {/* Pass setMobNav to DropDownHeader */}
-              <DropDownHeader setMobNav={setMobNav} />
-            </div>
-          )}
+            {/* Dropdown for Countries */}
+              <div className="block text-gray-500">
+                <span
+                  className="flex justify-between items-center hover:text-blue-900 cursor-pointer"
+                  onClick={() => setActive((prev) => !prev)}
+                >
+                  Countries
+                  <i
+                    className={`ml-2 fa-solid fa-chevron-${active ? "up" : "down"} text-sm`}
+                  ></i>
+                </span>
+                {active && (
+                  <div className="pl-4 mt-2 space-y-2">
+                    {/* Pass setMobNav to DropDownHeader */}
+                    <DropDownHeader setMobNav={setMobNav} />
+                  </div>
+                )}
+              </div>
+
+            <NavLink
+              to="/contact"
+              className="block text-gray-500 hover:text-blue-900"
+              onClick={() => setMobNav(false)}
+            >
+              Contact
+            </NavLink>
+          </div>
         </div>
-
-      <NavLink
-        to="/contact"
-        className="block text-gray-500 hover:text-blue-900"
-        onClick={() => setMobNav(false)}
-      >
-        Contact
-      </NavLink>
-    </div>
-  </div>
-)}
+      )}
     </nav>
   );
 };
