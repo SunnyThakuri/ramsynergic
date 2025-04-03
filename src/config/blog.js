@@ -13,6 +13,7 @@ export const Blogs=[
         id:2,
         title:"Important Update for Work Permit Applicants to Croatia",
         date:"April 2, 2025",
+        image:"",
         content1:"",
         content2:"",
         content3:""
@@ -21,6 +22,7 @@ export const Blogs=[
         id:3,
         title:"Hungary Work Permit 2025: Latest updates for Nepali, Indian, and Filipino Citizens",
         date:"April 4, 2025",
+        image:"",
         content1:"",
         content2:"",
         content3:""
@@ -29,6 +31,7 @@ export const Blogs=[
         id:4,
         title:"Shocking delays in Croatia Work Permit - Whats causing the hold-up?",
         date:"April 3 ,2025",
+        image:"",
         content1:"",
         content2:"",
         content3:""

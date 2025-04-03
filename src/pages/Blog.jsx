@@ -19,11 +19,13 @@ const Blog = () => {
           <div className="left-side h-auto lg:h-[544px]">
             <div className="img">
               <NavLink to='/BlogIndividual'>
-                <img className='w-full h-[414px]' src={passportImg} alt="" />
+                <div className="w-full md:h-[450px]">
+                  <img className='w-full h-full object-cover rounded-xl' src={passportImg} alt="" />
+                </div>
                 <h1 className='font-Poppins text-[20px] font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
               </NavLink>
-              <div className="btn flex space-x-5 mt-[16px]">
-                <button className='bg-[#A0D7FF] px-[12px] text-[14px]  py-[6px] rounded-[8px] text-white'>General</button>
+              <div className="btn flex space-x-5 items-center mt-[16px]">
+                <button className='bg-blue-900 px-[16px] text-[14px]  py-[8px] rounded-[8px] text-white'>General</button>
                 <h1 className='text-[#828282]  text-[14px] font-Poppins'>January 12, 2024</h1>
               </div>
             </div>
@@ -49,43 +51,20 @@ const Blog = () => {
 
         {/* --------------Popular_Section-------------------- */}
 
-        <h1 className='text-[#828282] font-Poppins mt-[124px]'>POPULAR</h1>
+        <h1 className='text-[#828282] font-Poppins  mt-[124px]'>POPULAR</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="popular1 mt-[40px] font-Poppins">
-            <img className='w-full' src={popularImg1} alt="" />
-            <h1 className='font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
-            <div className="btn flex space-x-5 mt-[16px]">
-              <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-              <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-            </div>
-          </div>
-
-          <div className="popular2 mt-[40px] font-Poppins">
-            <img className='w-full' src={popularImg2} alt="" />
-            <h1 className='font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
-            <div className="btn flex space-x-5 mt-[16px]">
-              <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-              <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-            </div>
-          </div>
-
-          <div className="popular3 mt-[40px] font-Poppins">
-            <img className='w-full' src={popularImg1} alt="" />
-            <h1 className='font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
-            <div className="btn flex space-x-5 mt-[16px]">
-              <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-              <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-            </div>
-          </div>
-
-          <div className="popular4 mt-[40px] font-Poppins">
-            <img className='w-full' src={popularImg2} alt="" />
-            <h1 className='font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
-            <div className="btn flex space-x-5 mt-[16px]">
-              <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-              <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-            </div>
-          </div>
+          {
+            Blogs.slice(1).map((blog,index) =>(
+              <div key={index} className="popular1 mt-[40px] font-Poppins">
+                <img className='w-full' src={popularImg1} alt="" />
+                <h1 className='font-semibold mt-[16px] uppercase '>{blog.title}</h1>
+                <div className="btn flex space-x-5 items-center mt-[16px]">
+                  <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>General</button>
+                  <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
+                </div>
+              </div>
+            ))
+          }
         </div>
 
       </div>
