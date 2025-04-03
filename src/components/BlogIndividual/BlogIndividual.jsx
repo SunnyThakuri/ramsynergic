@@ -7,7 +7,6 @@ import alsoLikeImg1 from "../../assets/BlogUI/likeImg.png"
 import alsoLikeImg2 from "../../assets/BlogUI/likeImg.png"
 import ContactUI from '../HomeUI/ContactUI'
 
-
 const BlogIndividual = () => {
   return (
     <>
