@@ -32,7 +32,9 @@ export const Blog3 = () =>{
                     documents are accurate and complete can help mitigate such delays.
                 </p>
             </div>
-
+            <div className="w-full h-[300px]">
+                <img src="/blog/blog32.jpg" className="w-full h-full object-cover"/>
+            </div>
             <div>
                 <p className="font-semibold text-lg">4. High Volume of Applications</p>
                 <p>Croatia has become an increasingly popular destination for foreign workers, leading to a surge

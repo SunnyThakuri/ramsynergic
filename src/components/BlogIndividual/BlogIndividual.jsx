@@ -65,15 +65,9 @@ const BlogIndividual = () => {
           ))}
         </div> */}
         
-
         {output}
-        {/* Image */}
-        <div className='w-full h-[300px] bg-red-500'>
-
-        </div>
 
         {/* -------------you may also like--------------- */}
-
         
       <Recomendation/>
       </div>

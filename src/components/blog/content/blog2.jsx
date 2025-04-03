@@ -39,6 +39,9 @@ export const Blog2 = () =>{
                     </li>
                 </ul>
             </div>
+            <div className="w-full h-[300px]">
+                <img src="/blog/blog22.jpg" className="w-full h-full object-cover"/>
+            </div>
             <div>
                 <p className="font-semibold text-lg">What Should Job Seekers Do?</p>
                 <ul>

@@ -19,6 +19,9 @@ export const Blog1 = () =>{
                 <p>Stricter Checks: Applicants from Nepal, India, Pakistan, and the Philippines will face stronger background checks and more delays.
                 </p>
             </div>
+            <div className="w-full h-[300px]">
+                <img src="/blog/blog32.jpg" className="w-full h-full object-cover"/>
+            </div>
             <div>
                 <p className="font-semibold text-lg">Can you stil Apply?</p>
                 <ul>

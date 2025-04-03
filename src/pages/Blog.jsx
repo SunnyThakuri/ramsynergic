@@ -4,8 +4,7 @@ import heroImg1 from "../assets/BlogUI/BlogHeroImg1.png"
 import heroImg2 from "../assets/BlogUI/BlogHeroImg2.png"
 import heroImg3 from "../assets/BlogUI/BlogHeroImg3.png"
 import heroImg4 from "../assets/BlogUI/BlogHeroImg4.png"
-import popularImg1 from "../assets/BlogUI/popularImg1.png"
-import popularImg2 from "../assets/BlogUI/popularImg2.png"
+import popularImg1 from "../assets/BlogUI/likeImg.png"
 import ContactUI from '../components/HomeUI/ContactUI'
 import { NavLink } from 'react-router-dom'
 import { Blogs } from "../config/blog"
@@ -18,14 +17,14 @@ const Blog = () => {
         <div className="Hero_Section flex flex-col lg:flex-row gap-10">
           <div className="left-side h-auto lg:h-[544px]">
             <div className="img">
-              <NavLink to='/BlogIndividual'>
+              <NavLink to='/blogdetail/1'>
                 <div className="w-full md:h-[450px]">
                   <img className='w-full h-full object-cover rounded-xl' src={passportImg} alt="" />
                 </div>
                 <h1 className='font-Poppins text-[20px] font-semibold mt-[16px]'>IRCC CONFIRMS CONTINUATION OF CURRENT EXPRESS ENTRY CATEGORIES IN 2024</h1>
               </NavLink>
               <div className="btn flex space-x-5 items-center mt-[16px]">
-                <button className='bg-blue-900 px-[16px] text-[14px]  py-[8px] rounded-[8px] text-white'>General</button>
+                <button className='bg-blue-900 px-[16px] text-[14px]  py-[8px] rounded-[8px] text-white'>Read More</button>
                 <h1 className='text-[#828282]  text-[14px] font-Poppins'>January 12, 2024</h1>
               </div>
             </div>
@@ -38,7 +37,9 @@ const Blog = () => {
                   <div className="text flex flex-col justify-between pb-4">
                     <h1 className='font-semibold'>{blog.title}</h1>
                     <div className="btn items-center flex space-x-5 ">
-                      <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>General</button>
+                      <NavLink to={`/blogdetail/${blog.id}`}>
+                        <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>Read More</button>
+                      </NavLink>
                       <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
                     </div>
                   </div>
