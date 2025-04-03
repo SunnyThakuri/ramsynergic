@@ -30,13 +30,13 @@ const Blog = () => {
           </div>
           <div className="right_side font-Poppins space-y-5 h-auto lg:h-[544px] overflow-hidden">
           {
-            Blogs.map((blog,index)=>(
+            Blogs.slice(1).map((blog,index)=>(
                 <div key={index} className="img1 flex space-x-6">
                   <img className='w-[139px] h-[118px]' src={heroImg4} alt="" />
-                  <div className="text">
+                  <div className="text flex flex-col justify-between pb-4">
                     <h1 className='font-semibold'>{blog.title}</h1>
-                    <div className="btn flex space-x-5 mt-[16px]">
-                      <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
+                    <div className="btn items-center flex space-x-5 ">
+                      <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>General</button>
                       <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
                     </div>
                   </div>
