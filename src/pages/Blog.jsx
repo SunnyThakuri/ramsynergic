@@ -8,6 +8,7 @@ import popularImg1 from "../assets/BlogUI/popularImg1.png"
 import popularImg2 from "../assets/BlogUI/popularImg2.png"
 import ContactUI from '../components/HomeUI/ContactUI'
 import { NavLink } from 'react-router-dom'
+import { Blogs } from "../config/blog"
 
 const Blog = () => {
   return (
@@ -27,52 +28,23 @@ const Blog = () => {
               </div>
             </div>
           </div>
-
           <div className="right_side font-Poppins space-y-5 h-auto lg:h-[544px] overflow-hidden">
-            <div className="img1 flex space-x-6">
-              <img className='w-[139px] h-[118px]' src={heroImg4} alt="" />
-              <div className="text">
-                <h1 className='font-semibold'>OET VS. IELTS: WHICH LANGUAGE TEST IS RIGHT FOR YOU?</h1>
-                <div className="btn flex space-x-5 mt-[16px]">
-                  <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-                  <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
+          {
+            Blogs.map((blog,index)=>(
+                <div key={index} className="img1 flex space-x-6">
+                  <img className='w-[139px] h-[118px]' src={heroImg4} alt="" />
+                  <div className="text">
+                    <h1 className='font-semibold'>{blog.title}</h1>
+                    <div className="btn flex space-x-5 mt-[16px]">
+                      <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
+                      <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="img2 flex space-x-6">
-              <img className='w-[139px] h-[118px]' src={heroImg1} alt="" />
-              <div className="text">
-                <h1 className='font-semibold'>OET VS. IELTS: WHICH LANGUAGE TEST IS RIGHT FOR YOU?</h1>
-                <div className="btn flex space-x-5 mt-[16px]">
-                  <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-                  <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-                </div>
-              </div>
-            </div>
-
-            <div className="img3 flex space-x-6">
-              <img className='w-[139px] h-[118px]' src={heroImg2} alt="" />
-              <div className="text">
-                <h1 className='font-semibold'>OET VS. IELTS: WHICH LANGUAGE TEST IS RIGHT FOR YOU?</h1>
-                <div className="btn flex space-x-5 mt-[16px]">
-                  <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-                  <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-                </div>
-              </div>
-            </div>
-
-            <div className="img4 flex space-x-6">
-              <img className='w-[139px] h-[118px]' src={heroImg3} alt="" />
-              <div className="text">
-                <h1 className='font-semibold'>OET VS. IELTS: WHICH LANGUAGE TEST IS RIGHT FOR YOU?</h1>
-                <div className="btn flex space-x-5 mt-[16px]">
-                  <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
-                  <h1 className='text-[#828282] font-Poppins'>January 12, 2024</h1>
-                </div>
-              </div>
-            </div>
+            ))
+          }
           </div>
+
         </div>
 
         {/* --------------Popular_Section-------------------- */}

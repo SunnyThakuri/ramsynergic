@@ -5,6 +5,7 @@ import aipoweredImg from "../../assets/BlogUI/AI Powered.png"
 import collaborateImg from "../../assets/BlogUI/Collaborate.png"
 import ContactUI from '../HomeUI/ContactUI'
 import Recomendation from '../blog/recommendation'
+import { Blogs } from '../../config/blog'
 
 const BlogIndividual = () => {
   return (
