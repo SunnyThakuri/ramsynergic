@@ -6,10 +6,10 @@ import "../../style/SuccessStories.css";
 
 
 const success = [
-  "/New folder/uae1.jpg",
-  "/New folder/uae2.jpg",
-  "/New folder/uae3.jpg",
-  "/New folder/uae4.jpg",
+  "/success/uae1.jpg",
+  "/success/uae2.jpg",
+  "/success/uae3.jpg",
+  "/success/uae4.jpg",
 
 ]
 

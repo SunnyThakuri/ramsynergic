@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../style/SuccessStories.css";
 
 const success = [
-    "/New folder/eu1.jpg",
-    "/New folder/eu1.jpg",
-    "/New folder/eu1.jpg",
-    "/New folder/eu1.jpg",
+    "/success/eu1.jpg",
+    "/success/eu1.jpg",
+    "/success/eu1.jpg",
+    "/success/eu1.jpg",
 ]
 
 const EuSuccessStories = () => {
