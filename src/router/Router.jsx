@@ -33,7 +33,7 @@ const Router = () => {
           <Route path="/spain" element={<Spain />} />
           <Route path="/canada" element={<Canada />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/BlogIndividual" element={<BlogIndividual />} />
+          <Route path="/blogdetail/:id" element={<BlogIndividual />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/termsAndCondition" element={<TermsAndCondition />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />

@@ -60,11 +60,11 @@ const Blog = () => {
                   <img 
                     className='w-full h-full rounded-xl object-cover' 
                     src={blog?.image || popularImg1} 
-                    alt="" />
+                    alt={blog.title} />
                 </div>
                 <h1 className='font-semibold mt-[16px] uppercase '>{blog.title}</h1>
                 <div className="btn flex space-x-5 items-center mt-[16px]">
-                  <NavLink to='/BlogIndividual'>
+                  <NavLink to={`/blogdetail/${blog.id}`}>
                     <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>Read More</button>
                   </NavLink>
                   <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
