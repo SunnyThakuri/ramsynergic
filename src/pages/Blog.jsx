@@ -34,7 +34,7 @@ const Blog = () => {
           {
             Blogs.slice(1).map((blog,index)=>(
                 <div key={index} className="img1 flex space-x-6">
-                  <img className='w-[139px] h-[118px]' src={heroImg4} alt="" />
+                  <img className='w-[139px] h-[118px] rounded-lg' src={blog.image || heroImg4} alt="" />
                   <div className="text flex flex-col justify-between pb-4">
                     <h1 className='font-semibold'>{blog.title}</h1>
                     <div className="btn items-center flex space-x-5 ">
@@ -54,12 +54,19 @@ const Blog = () => {
         <h1 className='text-[#828282] font-Poppins  mt-[124px]'>POPULAR</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {
-            Blogs.slice(1).map((blog,index) =>(
+            Blogs.slice(1).reverse().map((blog,index) =>(
               <div key={index} className="popular1 mt-[40px] font-Poppins">
-                <img className='w-full' src={popularImg1} alt="" />
+                <div className="w-full h-[380px] ">
+                  <img 
+                    className='w-full h-full rounded-xl object-cover' 
+                    src={blog?.image || popularImg1} 
+                    alt="" />
+                </div>
                 <h1 className='font-semibold mt-[16px] uppercase '>{blog.title}</h1>
                 <div className="btn flex space-x-5 items-center mt-[16px]">
-                  <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>General</button>
+                  <NavLink to='/BlogIndividual'>
+                    <button className='bg-blue-900 px-5 py-2 rounded-[8px] text-white'>Read More</button>
+                  </NavLink>
                   <h1 className='text-[#828282] font-Poppins'>{blog.date}</h1>
                 </div>
               </div>
