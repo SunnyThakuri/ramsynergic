@@ -48,7 +48,7 @@ const BlogIndividual = () => {
           <div className="btn flex space-x-5 items-center mt-[16px]">
             <button className='bg-[#A0D7FF] px-5 py-2 rounded-[8px] text-white'>General</button>
             <h1 className='text-[#828282] font-Poppins'>{Blogs[id].date}</h1>
-          </div>
+          </div>  
         </div>
 
         <div className="w-full md:h-[500px] mt-[32px]">

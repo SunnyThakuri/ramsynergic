@@ -331,7 +331,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {mobNav && (
         <div
-          className={`fixed top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform  ${
+          className={`fixed md:hidden top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform  ${
             mobNav ? "translate-x-0" : "translate-x-full"
           }`}
         >
