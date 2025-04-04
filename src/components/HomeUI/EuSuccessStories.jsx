@@ -20,7 +20,7 @@ const EuSuccessStories = () => {
         onClick={onClick}
       >
         <p className="rotate-180 relative top-1.5 right-3.5 sm:text-[12px] text-[10px] text-white  ">
-          <i className="fa-solid fa-play"></i>
+          <i className="fa-solid fa-play rotate-180"></i>
         </p>
       </div>
     );
@@ -34,7 +34,7 @@ const EuSuccessStories = () => {
         onClick={onClick}
       >
         <p className="text-[#00254F] relative top-2.5 left-3.5 sm:text-[12px] text-[10px] ">
-          <i className="fa-solid fa-play"></i>
+          <i className="fa-solid fa-play rotate-180"></i>
         </p>
       </div>
     );
@@ -47,8 +47,8 @@ const EuSuccessStories = () => {
     slidesToScroll: 1,
     centerMode: false,
     centerPadding: "",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SamplePrevArrow />,
+    prevArrow: <SampleNextArrow />,
     responsive: [
       {
         breakpoint: 768, // For devices with width <= 768px
