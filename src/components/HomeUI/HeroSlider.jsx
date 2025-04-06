@@ -126,7 +126,7 @@ const redirect=useNavigate()
               </p>
               <div className="btn pt-4 lg:pt-10">
                 <button
-                 onClick={()=> redirect("/contact")}
+                onClick={()=> redirect("/contact")}
                 className="bg-white flex items-center w-[120px] lg:w-[150px] lg:pl-[21.5px] pl-2 py-2 lg:text-[16px] text-[12px] lg:py-[12px] text-[#00264F] rounded-[8px]">
                   Apply Now
                   <img
