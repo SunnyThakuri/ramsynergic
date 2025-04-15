@@ -16,7 +16,7 @@ const EmblaCarousel = () => {
     },
     [
       AutoScroll({
-        speed: 3, // Adjust speed (higher value = faster scrolling)
+        speed: 1.5, // Adjust speed (higher value = faster scrolling)
         interval: 0, // Ensures seamless movement without stopping
         stopOnInteraction: false, // Prevents stopping when interacted with
       }),

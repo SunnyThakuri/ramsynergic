@@ -25,3 +25,19 @@
   right: 0;
   background-color: white;
 }
+
+
+/* carousel */
+.embla {
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  /* position: relative;
+  min-width: 80%;  */
+  scroll-snap-align: center;
+}
