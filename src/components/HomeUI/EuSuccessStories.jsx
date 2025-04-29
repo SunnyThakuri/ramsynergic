@@ -129,7 +129,7 @@ const EuSuccessStories = () => {
           {success.map((item, index) => (
             <div
               key={index}
-              className=" min-w-full md:min-w-[500px] h-[350px] my-4 md:h-[500px] flex-shrink-0 px-4"
+              className={`${index===0 ? "ml-16":""} min-w-full md:min-w-[500px] h-[350px] my-4 md:h-[500px] flex-shrink-0 px-4`}
             >
               <img
                 src={item}

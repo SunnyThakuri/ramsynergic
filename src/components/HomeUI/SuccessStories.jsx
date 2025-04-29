@@ -173,7 +173,7 @@ const CustomSlider = () => {
           {success.map((item, index) => (
             <div
               key={index}
-              className=" min-w-full md:min-w-[500px] h-[350px] my-4 md:h-[500px] flex-shrink-0 px-4"
+              className={`${index===0 ? "ml-16":""} min-w-full md:min-w-[500px] h-[350px] my-4 md:h-[500px] flex-shrink-0 px-4`}
             >
               <img
                 src={item}
@@ -186,7 +186,7 @@ const CustomSlider = () => {
       </div>
 
       {/* Text Section */}
-      <div className="text-[#00254F] md:pt-[154px] pt-12 md:pl-[50px] px-6 text-center md:text-left font-Poppins">
+      <div className="text-[#00254F] md:pt-[154px] pt-12 md:pl-[50px]  px-6 text-center md:text-left font-Poppins">
         <h1 className="font-semibold text-[32px]">GCC & Other Success Stories</h1>
         <p className="w-full md:w-[363px] text-center  pt-[16px]">
           Our legal experts guide clients through a seamless relocation process,
