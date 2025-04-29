@@ -329,9 +329,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {mobNav && (
         <div
-          className={`fixed md:hidden top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform  ${
-            mobNav ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed md:hidden top-0 right-0 h-screen w-[250px] bg-white shadow-lg z-[10000] transition-transform  `}
         >
           {/* Close Button */}
           <div className="flex justify-end px-6 py-5">
