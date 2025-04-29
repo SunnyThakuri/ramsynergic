@@ -143,7 +143,7 @@ const EuSuccessStories = () => {
 
       {/* Text Section */}
       <div className="text-white md:pt-[154px] pt-12 md:pl-[50px] px-6 text-center md:text-left font-Poppins">
-        <h1 className="font-semibold text-[32px]">GCC & Other Success Stories</h1>
+        <h1 className="font-semibold text-[32px]">Europe Success Stories</h1>
         <p className="w-full md:w-[363px] text-center md:text-left pt-[16px]">
           Our legal experts guide clients through a seamless relocation process,
           leveraging global resources and immigration expertise.
