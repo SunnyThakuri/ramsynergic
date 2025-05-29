@@ -14,7 +14,7 @@ import ContactUI from "../components/HomeUI/ContactUI"
 const About = () => {
   return (
     <>
-      <AboutHeroSlider />
+      {/* <AboutHeroSlider /> */}
       {/* <ClientsAndAbout /> */}
       <Immigration />
       <AboutDiscover />

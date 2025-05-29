@@ -12,11 +12,11 @@ const Croatia = ({country}) => {
         <div className="img  2xl:mx-[91px] xl:mx-[95px] lg:mx-[70px] md:mx-[50px] mx-[10px]">
 
           <div className="absolute xl:pt-[104px] lg:pt-[80px] sm:pt-[50px] pt-[20px] xl:ml-[85px] lg:ml-[60px] sm:ml-[40px] ml-[20px]">
-            <h1 className='text-white  lg:text-[32px] sm:text-[22px]  text-[16px] font-Poppins font-semibold ' >{country}</h1>
+            <h1 className='text-white  lg:text-[32px] sm:text-[22px]  text-[16px] font-Poppins font-semibold capitalize' >{country}</h1>
             <div className=" flex">
               <h1 className='font-Poppins text-white text-[14px] font-semibold'>Home </h1>
               <h1 className='text-gray-400 font-Poppins sm:text-[16px] text-[12px]'> / Countries</h1>
-              <h1 className='text-gray-400 font-Poppins sm:text-[16px] text-[12px] capitalize'> / {country}</h1>
+              <h1 className='text-gray-400 font-Poppins sm:text-[16px] text-[12px]  capitalize'> / {country}</h1>
             </div>
           </div>
           <img className='w-full' src={HeroImg} alt="" />
