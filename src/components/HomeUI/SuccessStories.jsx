@@ -146,6 +146,7 @@ const success = [
   "/success/uae2.jpg",
   "/success/uae3.jpg",
   "/success/uae4.jpg",
+  "/success/uae5.jpg",
   "/success/eu2.jpg",
 ];
 
