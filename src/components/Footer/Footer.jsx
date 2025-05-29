@@ -70,37 +70,37 @@ const Footer = () => {
               </NavLink>
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/slovakia">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Slovakia</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/croatia">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Croatia</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/blugaria">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Bulgaria</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/albania">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Albania</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/romania">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Romania</span>
               </NavLink>
 
               </li>
               <li className="text-[#007BFF]">
-              <NavLink to="/country/hungary">
+              <NavLink to="/country/norway">
                 <span className="text-[#CFCFCF] hover:underline underline-offset-4 ">Norway</span>
               </NavLink>
 
