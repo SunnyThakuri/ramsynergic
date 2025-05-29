@@ -27,13 +27,13 @@ export const countrySellected = [
       flag:"/flags/Flag-Bulgaria.webp",
       schengen:true,
     },
-    {
-      id: 4,
-      url: "/HomeUI/Albania.jpg",
-      name: "Albania",
-      flag:"/flags/Albania-Flag.jpg",
-      schengen:false,
-    },
+    // {
+    //   id: 4,
+    //   url: "/HomeUI/Albania.jpg",
+    //   name: "Albania",
+    //   flag:"/flags/Albania-Flag.jpg",
+    //   schengen:false,
+    // },
     {
       id: 5,
       url: "/HomeUI/Serbia.avif",
@@ -84,35 +84,35 @@ export const countrySellected = [
       tag:"GCC",
   
     },
-    {
-      id:12,
-      name:"Qatar",
-      url:"/HomeUI/quatar.jpg",
-      flag:"/flags/quatar-flag.jpg",
-      tag:"GCC",
+    // {
+    //   id:12,
+    //   name:"Qatar",
+    //   url:"/HomeUI/quatar.jpg",
+    //   flag:"/flags/quatar-flag.jpg",
+    //   tag:"GCC",
       
-    },
-    {
-      id:13,
-      name:"Bahrain",
-      url:"/HomeUI/bahrain.webp",
-      flag:"/flags/bahrain-flag.jpg",
-      tag:"GCC"
-    },
-    {
-      id:14,
-      name:"Saudi Arabia",
-      url:"/HomeUI/saudiArabia.jpg",
-      flag:"/flags/saudiArabia-flag.jpg",
-      tag:"GCC"
-    },
-    {
-      id:15,
-      name:"Kuwait",
-      url:"/HomeUI/kuwait.jpg",
-      flag:"/flags/kuwait-flag.jpg",
-      tag:"GCC"
-    },
+    // },
+    // {
+    //   id:13,
+    //   name:"Bahrain",
+    //   url:"/HomeUI/bahrain.webp",
+    //   flag:"/flags/bahrain-flag.jpg",
+    //   tag:"GCC"
+    // },
+    // {
+    //   id:14,
+    //   name:"Saudi Arabia",
+    //   url:"/HomeUI/saudiArabia.jpg",
+    //   flag:"/flags/saudiArabia-flag.jpg",
+    //   tag:"GCC"
+    // },
+    // {
+    //   id:15,
+    //   name:"Kuwait",
+    //   url:"/HomeUI/kuwait.jpg",
+    //   flag:"/flags/kuwait-flag.jpg",
+    //   tag:"GCC"
+    // },
   ];
   export const GccCountry=[
     {
@@ -122,33 +122,33 @@ export const countrySellected = [
       flag:"/flags/uae-flag.jpg",
       tag:"GCC"
     },
-    {
-      id:2,
-      name:"Qatar",
-      url:"/HomeUI/quatar.jpg",
-      flag:"/flags/quatar-flag.jpg",
-      tag:"GCC"
-    },
-    {
-      id:3,
-      name:"Bahrain",
-      url:"/HomeUI/bahrain.webp",
-      flag:"/flags/bahrain-flag.jpg",
-      tag:"GCC"
-    },
-    {
-      id:4,
-      name:"Saudi Arabia",
-      url:"/HomeUI/saudiArabia.jpg",
-      flag:"/flags/saudiArabia-flag.jpg",
-      tag:"GCC"
-    },
-    {
-      id:5,
-      name:"Kuwait",
-      url:"/HomeUI/kuwait.jpg",
-      flag:"/flags/kuwait-flag.jpg",
-      tag:"GCC"
-    },
+    // {
+    //   id:2,
+    //   name:"Qatar",
+    //   url:"/HomeUI/quatar.jpg",
+    //   flag:"/flags/quatar-flag.jpg",
+    //   tag:"GCC"
+    // },
+    // {
+    //   id:3,
+    //   name:"Bahrain",
+    //   url:"/HomeUI/bahrain.webp",
+    //   flag:"/flags/bahrain-flag.jpg",
+    //   tag:"GCC"
+    // },
+    // {
+    //   id:4,
+    //   name:"Saudi Arabia",
+    //   url:"/HomeUI/saudiArabia.jpg",
+    //   flag:"/flags/saudiArabia-flag.jpg",
+    //   tag:"GCC"
+    // },
+    // {
+    //   id:5,
+    //   name:"Kuwait",
+    //   url:"/HomeUI/kuwait.jpg",
+    //   flag:"/flags/kuwait-flag.jpg",
+    //   tag:"GCC"
+    // },
   
   ]
