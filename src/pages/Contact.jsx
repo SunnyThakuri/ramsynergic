@@ -26,8 +26,8 @@ const Contact = () => {
 
           <div className="hongkong_map  h-[290px] w-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2517407034093!2d55.316730174082764!3d25.262115677669208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d004dffc1b9%3A0x899af2b1a57abb72!2sGlobal%20Connect!5e0!3m2!1sen!2snp!4v1741160707041!5m2!1sen!2snp"
-               className="rounded-[8px] w-full h-full "
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.51579759697697!2d55.319124397960245!3d25.262096375126806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe9d02813b28a80f%3A0xdf8934c33d13be13!2sGlobal%20Connect%20HR%20%26%20Management%20Consultancy!5e0!3m2!1sen!2snp!4v1748603135777!5m2!1sen!2snp" 
+              className="rounded-[8px] w-full h-full "
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
