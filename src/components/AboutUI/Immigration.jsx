@@ -6,6 +6,9 @@ const Immigration = () => {
         <div className="flex flex-col-reverse gap-4 md:flex-row justify-between">
           <div>
             <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
+              About Us
+            </h1>
+            <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
               WHAT WE DO
             </h1>
 
