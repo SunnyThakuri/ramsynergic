@@ -5,10 +5,10 @@ const Immigration = () => {
       <div className="left-side">
         <div className="flex flex-col-reverse gap-4 md:flex-row justify-between">
           <div>
-            <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
+            <h1 className="text-[#000000] text-[24px] lg:text-[36px] font-semibold">
               About Us
             </h1>
-            <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold">
+            <h1 className="text-[#007BFF] text-[24px] lg:text-sm font-semibold">
               WHAT WE DO
             </h1>
 
