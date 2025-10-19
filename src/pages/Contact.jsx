@@ -4,9 +4,8 @@ import navigationlogo from "../assets/ContactUI/Navigation_logo.png";
 import heattlogo from "../assets/ContactUI/Heart_logo.png";
 import ContactForm from "./ContactForm";
 import { useNavigate } from "react-router-dom";
-import Faqs from "../components/ServicesUI/Faqs";
 import FaqCustom from "../components/ServicesUI/FaqCustom";
-import { FaFacebook,FaInstagram,FaTiktok,FaWhatsapp } from "react-icons/fa";
+import { FaFacebook,FaInstagram,FaTiktok,FaWhatsapp,FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const redirect=useNavigate()
@@ -42,7 +41,7 @@ const Contact = () => {
           <div className="left_side mt-[40px] font-Poppins space-y-4">
             <h2 className="text-[#828282] text-lg">YOUR JOURNEY BEGINS HERE</h2>
             <h1 className="text-[32px] text-[#00264F] font-semibold">
-              LET'S CONNECT
+              {`LET'S CONNECT`}
             </h1>
             <p className="text-[#828282] w-full lg:w-[274px]">
               Connect With Us. Use our contact form to reach out, and our team
@@ -61,6 +60,9 @@ const Contact = () => {
               </a>
               <a href="https://wa.me/971567895360">
                 <FaWhatsapp className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
+              </a>
+              <a href="https://www.linkedin.com/company/globalconnecthr/">
+                <FaLinkedin className="w-6 h-6 hover:text-[#00264f] hover:scale-110" />
               </a>
             </div>
           </div>
@@ -82,7 +84,7 @@ const Contact = () => {
           </h1>
           <p className="text-[#CFCFCF] pt-[16px] w-full md:w-[298px]">
             Discover the heart behind Migrant Group, where we fuse compassion
-            and expertise to transform migrants' dreams into thriving realities.
+            and expertise to transform migrants dreams into thriving realities.
           </p>
 
           <div className="btn mt-[30px] md:mt-[70px]">
@@ -100,8 +102,8 @@ const Contact = () => {
             EMPOWERING DREAMS
           </h1>
           <p className="text-[#CFCFCF] pt-[36px] w-full md:w-[318px]">
-            We envision a world where every migrant's aspirations find wings to
-            soar.
+            {`We envision a world where every migrant's aspirations find wings to
+            soar.`}
           </p>
         </div>
 
@@ -122,8 +124,8 @@ const Contact = () => {
             NAVIGATING ALL PATHS
           </h1>
           <p className="text-[#CFCFCF] pt-[36px] w-full md:w-[357px]">
-            Our team's broad experience spans various immigration destinations
-            and visa types.
+            {`Our team's broad experience spans various immigration destinations
+            and visa types.`}
           </p>
         </div>
 
@@ -131,8 +133,8 @@ const Contact = () => {
           <img src={heattlogo} alt="Changing Lives" />
           <h1 className="text-white font-semibold pt-[8px]">CHANGING LIVES</h1>
           <p className="text-[#CFCFCF] pt-[36px] w-full md:w-[357px]">
-            We believe in giving back and striving to make a positive difference
-            in migrants' lives.
+            {`We believe in giving back and striving to make a positive difference
+            in migrants' lives.`}
           </p>
         </div>
       </div>

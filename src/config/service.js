@@ -4,7 +4,7 @@ export const serviceArr=[
     { title: "Driving", img: "/industryServed/driving.webp" },
     { title: "Warehouse", img: "/industryServed/warehouse.jpg" },
     { title: "Factories", img: "/industryServed/factory.jpg" },
-    { title: "Telecommunication", img: "/industryServed/telecommunication.jpg" },
+   
     { title: "Construction", img: "/industryServed/construction.jpg" },
-    { title: "Finance", img: "/industryServed/finance.jpg" },
+    
   ]

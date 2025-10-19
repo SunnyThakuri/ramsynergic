@@ -112,7 +112,7 @@ const Faqs = () => {
             <span>
               <span className="">
                 {" "}
-                We also offer work opportunities in **GCC countries**, including
+                We also offer work opportunities in GCC countries, including
               </span>
               <span>
                 <Link
@@ -157,12 +157,15 @@ const Faqs = () => {
                 >
                   Kuwait
                 </Link>
-                .
+                
               </span>
+            </span>
+            <span>
+              as well as for Maldives. 
             </span>
 
             <span>
-              For the latest updates, you can contact us directly or check{" "}
+               For the latest updates, you can contact us directly or check{" "}
               <span>
                 <Link to="/contact" className="text-blue-500 underline">
                   here{" "}
@@ -327,7 +330,7 @@ const Faqs = () => {
       ),
     },
     {
-      question: "Is there Link refund policy?",
+      question: "Is there a refund policy?",
       answer:
         " Yes, of course we give you the refund also. Depends on the program you have applied for.",
     },

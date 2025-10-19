@@ -5,6 +5,7 @@ import google from "../../assets/HomeUI/google.png";
 import tiktok from "../../assets/HomeUI/tiktok.png";
 import instagram from "../../assets/HomeUI/insta.png";
 import { Link, NavLink } from "react-router-dom";
+import {FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -224,6 +225,9 @@ const Footer = () => {
             >
               <img src={instagram} alt="" />
             </Link>
+            <a href="https://www.linkedin.com/company/globalconnecthr/">
+              <FaLinkedin className="w-6 h-6 text-white hover:scale-110" />
+            </a>
           </div>
         </div>
 

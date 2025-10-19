@@ -16,7 +16,7 @@ function MidAbout() {
                 </div>
         
                 <div className="mt-4">
-                  <h1 className="text-[18px] lg:text-[20px]">GCC VISA (FROM ASIAN COUNTRIES)</h1>
+                  <h1 className="text-[18px] lg:text-[20px]">GCC & Other countries</h1>
                   <div className="mt-3 bg-[#D9D9D9] w-full lg:w-[472px] h-[12px] rounded-[50px]">
                     <p className="bg-[#00264F] rounded-[50px] w-[80%] h-[12px]"></p>
                   </div>
