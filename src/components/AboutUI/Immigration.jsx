@@ -1,4 +1,3 @@
-
 const Immigration = () => {
   return (
     <div className="all  2xl:mx-[166.5px] xl:mx-[100px] lg:mx-[80px] md:mx-[50px] sm:mx-[20px] mx-[10px] my-10 lg:my-[166px] flex flex-col lg:flex-row justify-between">
@@ -16,23 +15,82 @@ const Immigration = () => {
               At the heart of our operations, we excel in delivering bespoke
               manpower solutions that cater to the unique requirements of our
               clients, whether for short-term assignments or long-term projects.
-              Acknowledging that employees are the lifeblood of any organization, we
-              prioritize the delivery of reliable and trusted manpower services
-              across various sectors. We facilitate the supply of qualified
-              candidates across multiple sectors in different countries, leveraging
-              our expertise to provide exclusive manpower solutions in the UAE,
-              Nepal, India, Europe, and numerous organizations worldwide.
+              Acknowledging that employees are the lifeblood of any
+              organization, we prioritize the delivery of reliable and trusted
+              manpower services across various sectors. We facilitate the supply
+              of qualified candidates across multiple sectors in different
+              countries, leveraging our expertise to provide exclusive manpower
+              solutions in the UAE, Nepal, India, Europe, and numerous
+              organizations worldwide.
             </p>
           </div>
-        <div>
-         <img
-         src="/aboutUs/Workforce.jpg"
-         alt=""
-         className="w-full h-full object-cover"/>
+          <div>
+            <img
+              src="/aboutUs/Workforce.jpg"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
+        {/* // OUR TEAM section */}
+        <h1 className="text-[#000000] text-[24px] lg:text-[32px] font-semibold mt-12 lg:mt-16">
+          OUR TEAM
+        </h1>
+        <p className="text-[#828282] mt-4 mb-8 max-w-2xl">
+          Meet the dedicated professionals who make our vision a reality with
+          passion and expertise.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mt-6">
+          {[
+            {
+              name: "Justine Veina A. Valencia",
+              position: "Admin",
+              image: "/teams/MISS JUSTINE VEINA A . VALENCIA - ADMIN .jpeg",
+            },
+            {
+              name: "Sheila Llona",
+              position: "Sales Consultant",
+              image: "/teams/MISS SHEILA LLONA - SALES CONSULTANT .jpeg",
+            },
+            {
+              name: "Dino",
+              position: "Employer",
+              image: "/teams/Mr. DINO EMPLOYER.jpeg",
+            },
+            {
+              name: "Saroj Nepal",
+              position: "Document Management Administrator",
+              image:
+                "/teams/SAROJ NEPAL - Document Management Administrator.jpeg",
+            },
+            {
+              name: "Sushant Acharya",
+              position: "CEO & Founder",
+              image: "/teams/SUSHANT ACHARYA CEO & FOUNDER .jpeg",
+            },
+          ].map((member, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="overflow-hidden rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 w-full aspect-[4/5] max-w-[220px]">
+                <img
+                  src={member.image}
+                  alt={`${member.name} - ${member.position}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              <h3 className="mt-4 text-lg md:text-xl font-semibold text-gray-900">
+                {member.name}
+              </h3>
+
+              <p className="text-[#007BFF] font-medium mt-1">
+                {member.position}
+              </p>
+            </div>
+          ))}
         </div>
-
-
         <h1 className="text-[#000000]  text-[24px] lg:text-[32px] font-semibold mt-4 lg:mt-8">
           OUR MISSION
         </h1>
@@ -96,12 +154,8 @@ const Immigration = () => {
             </div>
           </div>
         </div>
-         
-        
         {/* last */}
       </div>
-
-      
     </div>
   );
 };
